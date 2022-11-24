@@ -161,4 +161,14 @@ body.offcanvas-active {
 .form-control:focus {
   box-shadow: none;
   outline: none;
+}
+
+.common-title {
+  margin-bottom: 20px;
+}
+.common-title h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0;
 }/*# sourceMappingURL=responsive.css.map */

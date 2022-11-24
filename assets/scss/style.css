@@ -165,6 +165,16 @@ body.offcanvas-active {
   outline: none;
 }
 
+.common-title {
+  margin-bottom: 20px;
+}
+.common-title h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
 .top-header {
   background: #282828;
   padding: 5px 0;
@@ -357,7 +367,7 @@ body.offcanvas-active {
 
 .delivery-offer-main {
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 .delivery-offer-main .delivery-offer-flex {
   display: flex;
@@ -403,4 +413,74 @@ body.offcanvas-active {
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   padding: 8px 40px;
+}
+
+.trending-categories-main {
+  margin-bottom: 20px;
+}
+.trending-categories-main .trending-slider-wrapper .single-category {
+  height: 120px;
+  width: 120px;
+  background: red;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.trending-categories-main .trending-slider-wrapper .single-category img {
+  height: 120px;
+  width: 120px;
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.trending-categories-main .trending-slider-wrapper .category-description {
+  margin: 15px 0;
+  text-align: center;
+}
+.trending-categories-main .trending-slider-wrapper .category-description h3.parent-category {
+  color: #909090;
+  text-transform: capitalize;
+  font-size: 17px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  line-height: normal;
+}
+.trending-categories-main .trending-slider-wrapper .category-description p {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #282828;
+}
+.trending-categories-main .swiper-button-prev,
+.trending-categories-main .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  top: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+.trending-categories-main .swiper-button-prev::after,
+.trending-categories-main .swiper-button-next::after {
+  font-size: 17px;
+  color: #2b2d42;
+}
+.trending-categories-main .swiper-button-prev {
+  left: 0;
+}
+.trending-categories-main .swiper-button-next {
+  right: 0;
 }/*# sourceMappingURL=style.css.map */

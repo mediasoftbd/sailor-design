@@ -170,3 +170,12 @@ body.offcanvas-active {
     outline: none;
   }
 }
+.common-title {
+  margin-bottom: 20px;
+  h2 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+}
