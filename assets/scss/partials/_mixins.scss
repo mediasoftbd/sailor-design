@@ -17,11 +17,11 @@
 @mixin trans-center {
   top: 50%;
   left: 50%;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
 @mixin no-radious {
@@ -30,4 +30,20 @@
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
+}
+
+@mixin common-title {
+  color: $text-color;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@mixin circle-radius {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
