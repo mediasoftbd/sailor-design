@@ -47,3 +47,14 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
+@mixin common-product-title {
+  font-size: 17px;
+
+  text-transform: capitalize;
+  color: $product-title-color;
+}
+@mixin common-product-price {
+  margin-bottom: 0;
+  font-size: 14px;
+}
