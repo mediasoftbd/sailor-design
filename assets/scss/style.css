@@ -898,4 +898,121 @@ p.curret-price {
 
 .ad-banner {
   margin-bottom: 20px;
+}
+
+.doublead-banner-main {
+  margin-bottom: 100px;
+}
+.doublead-banner-main .double-add-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.doublead-banner-main .double-add-flex .parentbox-1 {
+  flex-basis: 50%;
+}
+.doublead-banner-main .double-add-flex .parentbox-1 .content-parent {
+  margin: 8px;
+  overflow: hidden;
+  margin-left: 0;
+  position: relative;
+}
+.doublead-banner-main .double-add-flex .parentbox-1 .parent-box-bg-1 {
+  background: url(../images/ad-1.jpg);
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 200px;
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  -moz-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  -ms-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  -o-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  overflow: hidden;
+}
+.doublead-banner-main .double-add-flex .parentbox-1:hover .parent-box-bg-1 {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.doublead-banner-main .double-add-flex .parentbox-2 {
+  flex-basis: 50%;
+  overflow: hidden;
+}
+.doublead-banner-main .double-add-flex .parentbox-2 .content-parent {
+  margin: 8px;
+  margin-right: 0;
+  overflow: hidden;
+  position: relative;
+}
+.doublead-banner-main .double-add-flex .parentbox-2 .parent-box-bg-2 {
+  background: url(../images/ad-2.jpg);
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 200px;
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  overflow: hidden;
+}
+.doublead-banner-main .double-add-flex .parentbox-2:hover .parent-box-bg-2 {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.doublead-banner-main .double-add-flex .parentbox-3 {
+  flex-basis: 55%;
+}
+.doublead-banner-main .double-add-flex .parentbox-3 .content-parent {
+  margin: 8px;
+  margin-left: 0;
+  overflow: hidden;
+  position: relative;
+}
+.doublead-banner-main .double-add-flex .parentbox-3 .parent-box-bg-3 {
+  background: url(../images/ad-3.jpg);
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 200px;
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  overflow: hidden;
+}
+.doublead-banner-main .double-add-flex .parentbox-3:hover .parent-box-bg-3 {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.doublead-banner-main .double-add-flex .parentbox-4 {
+  flex-basis: 45%;
+}
+.doublead-banner-main .double-add-flex .parentbox-4 .content-parent {
+  margin: 8px;
+  margin-right: 0;
+  overflow: hidden;
+  position: relative;
+}
+.doublead-banner-main .double-add-flex .parentbox-4 .parent-box-bg-4 {
+  background: url(../images/ad-5.jpg);
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 200px;
+  transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
+  overflow: hidden;
+}
+.doublead-banner-main .double-add-flex .parentbox-4:hover .parent-box-bg-4 {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.doublead-banner-main .double-add-flex .content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+}
+.doublead-banner-main .double-add-flex .content h3 {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+.doublead-banner-main .double-add-flex .content h2 {
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
