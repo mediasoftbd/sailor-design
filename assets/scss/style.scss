@@ -307,7 +307,7 @@
 }
 
 .new-arrval-main {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   .nav-tabs {
     border: none;
     margin-bottom: 20px;
@@ -339,10 +339,39 @@
   }
   .single-product {
     .card {
-      @include no-radious;
+      @include single-product-card;
       .product-image {
-        min-height: 403px;
-        position: relative;
+        @include single-product-image;
+        a.add-towish-btn {
+          @include add-towish-btn;
+          &:hover {
+            color: $logo-red;
+            background: #fff;
+          }
+        }
+        .product-view-sets {
+          @include product-view-sets;
+          ul.nav {
+            justify-content: center;
+            li.nav-item {
+              a.nav-link {
+                @include product-view-sets-nav-link;
+                i {
+                  font-size: 17px;
+                }
+                &:hover {
+                  background: $logo-red;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          .product-view-sets {
+            bottom: 0;
+          }
+        }
       }
       .product-description {
         margin-top: 10px;
@@ -359,6 +388,125 @@
         p.price {
           @include common-product-price;
         }
+      }
+    }
+  }
+  .swiper-button-next {
+    @include common-swiper-next;
+    transition: 1s;
+    &::after {
+      font-size: 17px;
+      color: $logo-blue;
+    }
+    &:hover {
+      background: $logo-red;
+      &::after {
+        color: #fff;
+      }
+    }
+  }
+  .swiper-button-prev {
+    @include common-swiper-prev;
+    transition: 1s;
+    &::after {
+      font-size: 17px;
+      color: $logo-blue;
+    }
+    &:hover {
+      background: $logo-red;
+      &::after {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.flash-sale-main {
+  margin-bottom: 100px;
+  .single-product {
+    .card {
+      @include single-product-card;
+      .product-image {
+        @include single-product-image;
+        a.add-towish-btn {
+          @include add-towish-btn;
+          &:hover {
+            color: $logo-red;
+            background: #fff;
+          }
+        }
+        .product-view-sets {
+          @include product-view-sets;
+          ul.nav {
+            justify-content: center;
+            li.nav-item {
+              margin-right: 20px;
+              a.nav-link {
+                @include product-view-sets-nav-link;
+                i {
+                  font-size: 17px;
+                }
+                &:hover {
+                  background: $logo-red;
+                  color: #fff;
+                }
+              }
+            }
+            li.nav-item:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+        &:hover {
+          .product-view-sets {
+            bottom: 0;
+          }
+        }
+      }
+      .product-description {
+        margin-top: 10px;
+        h4.product-name {
+          margin-bottom: 5px;
+          display: none;
+          a {
+            @include common-product-title;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $logo-red;
+            }
+          }
+        }
+        p.price {
+          @include common-product-price;
+        }
+      }
+    }
+  }
+  .swiper-button-next {
+    @include common-swiper-next;
+    transition: 1s;
+    &::after {
+      font-size: 17px;
+      color: $logo-blue;
+    }
+    &:hover {
+      background: $logo-red;
+      &::after {
+        color: #fff;
+      }
+    }
+  }
+  .swiper-button-prev {
+    @include common-swiper-prev;
+    transition: 1s;
+    &::after {
+      font-size: 17px;
+      color: $logo-blue;
+    }
+    &:hover {
+      background: $logo-red;
+      &::after {
+        color: #fff;
       }
     }
   }

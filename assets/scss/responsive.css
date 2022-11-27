@@ -171,4 +171,75 @@ body.offcanvas-active {
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 0;
+}
+
+.flashsale-tag {
+  background: #d41f27;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.flashsale-tag i {
+  font-size: 25px;
+  display: block;
+  margin: 0px auto;
+}
+
+p.old-price {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #2b2d42;
+  display: inline-block;
+  position: relative;
+}
+p.old-price::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #d41f27;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+p.curret-price {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #2b2d42;
+  display: inline-block;
+  margin-right: 10px;
+  color: #d41f27;
+  font-weight: bold;
+}
+
+.price-flex {
+  margin-bottom: 5px;
+}
+
+.product-description .progress {
+  height: 7px;
+  margin-bottom: 5px;
+}
+.product-description .progress .progress-bar {
+  background: #d41f27;
+}
+.product-description p.sale-status {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #4d4d4d;
+  text-transform: capitalize;
 }/*# sourceMappingURL=responsive.css.map */

@@ -179,3 +179,66 @@ body.offcanvas-active {
     margin-bottom: 0;
   }
 }
+
+.flashsale-tag {
+  background: $logo-red;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 2px;
+  i {
+    font-size: 25px;
+    display: block;
+    margin: 0px auto;
+  }
+}
+
+p.old-price {
+  @include common-product-price;
+  display: inline-block;
+  position: relative;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: $logo-red;
+    content: '';
+    @include transY-center;
+  }
+}
+
+p.curret-price {
+  @include common-product-price;
+  display: inline-block;
+  margin-right: 10px;
+  color: $logo-red;
+  font-weight: bold;
+}
+.price-flex {
+  margin-bottom: 5px;
+}
+
+.product-description {
+  .progress {
+    height: 7px;
+    margin-bottom: 5px;
+    .progress-bar {
+      background: $logo-red;
+    }
+  }
+  p.sale-status {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: $text-color;
+    text-transform: capitalize;
+  }
+}
