@@ -242,4 +242,18 @@ p.curret-price {
   font-size: 13px;
   color: #4d4d4d;
   text-transform: capitalize;
+}
+
+.flas-counter div {
+  text-align: center;
+  font-size: 2em;
+  max-width: 300px;
+  margin-left: auto;
+}
+.flas-counter .separator {
+  width: 5%;
+}
+.flas-counter .time {
+  width: 30%;
+  display: inline;
 }/*# sourceMappingURL=responsive.css.map */

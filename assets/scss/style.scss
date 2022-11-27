@@ -422,7 +422,7 @@
 }
 
 .flash-sale-main {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   .single-product {
     .card {
       @include single-product-card;
@@ -510,4 +510,8 @@
       }
     }
   }
+}
+
+.ad-banner {
+  margin-bottom: 100px;
 }

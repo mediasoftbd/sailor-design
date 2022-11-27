@@ -246,6 +246,20 @@ p.curret-price {
   text-transform: capitalize;
 }
 
+.flas-counter div {
+  text-align: center;
+  font-size: 2em;
+  max-width: 300px;
+  margin-left: auto;
+}
+.flas-counter .separator {
+  width: 5%;
+}
+.flas-counter .time {
+  width: 30%;
+  display: inline;
+}
+
 .top-header {
   background: #282828;
   padding: 5px 0;
@@ -731,7 +745,7 @@ p.curret-price {
 }
 
 .flash-sale-main {
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 .flash-sale-main .single-product .card {
   border-radius: 0;
@@ -880,4 +894,8 @@ p.curret-price {
 }
 .flash-sale-main .swiper-button-prev:hover::after {
   color: #fff;
+}
+
+.ad-banner {
+  margin-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */
