@@ -924,6 +924,7 @@ p.curret-price {
   margin-bottom: 0;
   font-size: 17px;
   text-align: center;
+  text-transform: capitalize;
 }
 .megazin-main .megazin-box .megazine-bg {
   background-size: cover !important;
@@ -934,6 +935,9 @@ p.curret-price {
   overflow: hidden;
   padding: 25px 25px 25px 25px;
   border-radius: 4px 4px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .megazin-main .megazin-box .megazine-bg::before {
   content: "";
@@ -943,4 +947,59 @@ p.curret-price {
   width: 100%;
   height: 100%;
   background: rgba(57, 57, 58, 0.44);
+}
+.megazin-main .megazin-box .megazine-bg .megazine-content {
+  position: relative;
+  z-index: 1;
+}
+.megazin-main .megazin-box .megazine-bg .megazine-content h5 {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+.megazin-main .megazin-box .megazine-bg .megazine-content h3 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+.megazin-main .megazin-box .megazine-bg .megazine-content h3 a {
+  color: #fff;
+}
+.megazin-main .megazin-box .megazine-bg .megazine-content p {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+}
+.megazin-main .swiper-wrapper {
+  margin-bottom: 50px;
+}
+.megazin-main .swiper-pagination-bullet {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px;
+  border: 1px solid #e2e2e2;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+  margin: 0;
+  opacity: 1;
+  background: transparent !important;
+}
+.megazin-main .swiper-pagination-bullet::before {
+  width: 7px;
+  height: 7px;
+  content: "";
+  display: block;
+  background: #e2e2e2;
+  border-radius: 100%;
+}
+.megazin-main .swiper-pagination-bullet-active {
+  border-color: #282828;
+}
+.megazin-main .swiper-pagination-bullet-active::before {
+  background: #282828;
 }/*# sourceMappingURL=style.css.map */
