@@ -520,7 +520,7 @@
 }
 
 .megazin-main {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   padding: 65px 0;
   background: #f7f7f8;
   .blog-header {
@@ -619,6 +619,67 @@
     border-color: $black;
     &::before {
       background: $black;
+    }
+  }
+}
+.download-app-main {
+  padding: 107px 0px 0px 0px;
+  .download-bg-main {
+    position: relative;
+    img.app-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: fit-content;
+    }
+    .how-app-work-slider-wrapper {
+      position: relative;
+      width: 305px;
+      height: 655px;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50px;
+      -webkit-box-shadow: 0 18px 37px rgb(212 50 151 / 20%);
+      box-shadow: 0 18px 37px rgb(212 50 151 / 20%);
+    }
+    .how-app-work-screen-mobile-image {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: block;
+      height: 655px;
+      left: calc(50% + 0.5px);
+      position: absolute;
+      top: 0;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 310px;
+      z-index: 2;
+    }
+    .bx-wrapper {
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      border-radius: 50px;
+      max-width: 100%;
+      .bx-viewport {
+        width: 100%;
+        // overflow: hidden;
+        position: relative;
+        height: 631px;
+        text-align: center;
+        img {
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 50px;
+          margin-top: 11px;
+          height: auto;
+          max-width: 100%;
+          border: none;
+        }
+      }
     }
   }
 }

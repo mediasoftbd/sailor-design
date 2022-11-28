@@ -905,7 +905,7 @@ p.curret-price {
 }
 
 .megazin-main {
-  margin-bottom: 100px;
+  margin-bottom: 0px;
   padding: 65px 0;
   background: #f7f7f8;
 }
@@ -1002,4 +1002,63 @@ p.curret-price {
 }
 .megazin-main .swiper-pagination-bullet-active::before {
   background: #282828;
+}
+
+.download-app-main {
+  padding: 107px 0px 0px 0px;
+}
+.download-app-main .download-bg-main {
+  position: relative;
+}
+.download-app-main .download-bg-main img.app-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.download-app-main .download-bg-main .how-app-work-slider-wrapper {
+  position: relative;
+  width: 305px;
+  height: 655px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  box-shadow: 0 18px 37px rgba(212, 50, 151, 0.2);
+}
+.download-app-main .download-bg-main .how-app-work-screen-mobile-image {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  height: 655px;
+  left: calc(50% + 0.5px);
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 310px;
+  z-index: 2;
+}
+.download-app-main .download-bg-main .bx-wrapper {
+  border: none;
+  box-shadow: none;
+  border-radius: 50px;
+  max-width: 100%;
+}
+.download-app-main .download-bg-main .bx-wrapper .bx-viewport {
+  width: 100%;
+  position: relative;
+  height: 631px;
+  text-align: center;
+}
+.download-app-main .download-bg-main .bx-wrapper .bx-viewport img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  margin-top: 11px;
+  height: auto;
+  max-width: 100%;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
