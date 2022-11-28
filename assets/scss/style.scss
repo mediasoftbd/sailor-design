@@ -912,7 +912,7 @@
       font-weight: 600;
       text-transform: uppercase;
       color: #fff;
-      font-size: 20px;
+      font-size: 17px;
     }
   }
   .fooer-navs {
@@ -925,6 +925,10 @@
           text-transform: capitalize;
         }
       }
+    }
+    p {
+      color: #fff;
+      margin-bottom: 0;
     }
   }
 }

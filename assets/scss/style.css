@@ -1243,11 +1243,15 @@ p.curret-price {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  font-size: 20px;
+  font-size: 17px;
 }
 .footer-main .fooer-navs ul li.nav-item a.nav-link {
   padding-left: 0;
   color: #fff;
   font-size: 14px;
   text-transform: capitalize;
+}
+.footer-main .fooer-navs p {
+  color: #fff;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
