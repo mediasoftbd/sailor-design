@@ -904,7 +904,7 @@
 .footer-main {
   padding: 50px 0;
   background: $logo-blue;
-  margin-bottom: 100px;
+
   .footer-title {
     margin-bottom: 20px;
     h3 {
@@ -929,6 +929,20 @@
     p {
       color: #fff;
       margin-bottom: 0;
+    }
+  }
+}
+.copyright-main {
+  padding: 10px 0;
+  background: #3b3d56;
+  border-top: 1px dotted #fff;
+  p.copyright {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    a {
+      color: #fff;
     }
   }
 }

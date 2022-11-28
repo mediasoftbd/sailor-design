@@ -1233,7 +1233,6 @@ p.curret-price {
 .footer-main {
   padding: 50px 0;
   background: #2b2d42;
-  margin-bottom: 100px;
 }
 .footer-main .footer-title {
   margin-bottom: 20px;
@@ -1254,4 +1253,19 @@ p.curret-price {
 .footer-main .fooer-navs p {
   color: #fff;
   margin-bottom: 0;
+}
+
+.copyright-main {
+  padding: 10px 0;
+  background: #3b3d56;
+  border-top: 1px dotted #fff;
+}
+.copyright-main p.copyright {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.copyright-main p.copyright a {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
