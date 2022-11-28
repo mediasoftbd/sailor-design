@@ -1006,6 +1006,7 @@ p.curret-price {
 
 .download-app-main {
   padding: 107px 0px 0px 0px;
+  margin-bottom: 200px;
 }
 .download-app-main .download-bg-main {
   position: relative;
@@ -1061,4 +1062,171 @@ p.curret-price {
   height: auto;
   max-width: 100%;
   border: none;
+}
+.download-app-main .how-app-work-content-wrap {
+  padding-left: 85px;
+}
+.download-app-main .how-app-work-content-wrap .title {
+  margin-bottom: 40px;
+}
+.download-app-main .how-app-work-content-wrap .title h3 {
+  margin: 0;
+  color: #170b35;
+  font-size: 32px;
+  font-weight: 700;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content {
+  padding-top: 30px;
+  padding-bottom: 45px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: url(../images/gradient-sep.png) no-repeat center center;
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item {
+  display: block;
+  margin-top: 60px;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work {
+  padding-left: 10px;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .icon-box {
+  display: table-cell;
+  vertical-align: middle;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .icon-box .inner {
+  width: 74px;
+  height: 74px;
+  background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+  position: relative;
+  border-radius: 50%;
+  text-align: center;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .icon-box .inner::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .icon-box .inner i {
+  color: #fff;
+  line-height: 74px;
+  font-size: 44px;
+  position: relative;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .icon-box .inner.deactive::before {
+  opacity: 1;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .icon-box .inner.deactive i {
+  background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .text-box {
+  padding-left: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .text-box h4 {
+  font-size: 20px;
+  color: #150a33;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.download-app-main .how-app-work-content-wrap .how-app-work-content .pager-item .single-how-app-work .text-box p {
+  font-size: 14px;
+  line-height: 27px;
+  color: #656565;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn {
+  vertical-align: middle;
+  background: linear-gradient(to right, rgb(101, 65, 193) 0%, rgb(212, 51, 150) 98%, rgb(212, 51, 150) 100%);
+  position: relative;
+  padding: 8px 40px 8px 80px;
+  border-radius: 30px;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 28px;
+  background: #fff;
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn i {
+  font-size: 30px;
+  background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 35px;
+  transition: all 0.4s ease;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn span.avail {
+  font-size: 12.5px;
+  display: block;
+  background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn span.store-name {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 0;
+  display: block;
+  background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn span.inner {
+  position: relative;
+  display: block;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn.active {
+  margin-right: 15px;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn.active i {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn.active::before {
+  opacity: 0;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn.active span.avail {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn.active span.store-name {
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+}
+.download-app-main .how-app-work-content-wrap .download-app-flex .download-btn.active span.inner {
+  position: relative;
+  display: block;
 }/*# sourceMappingURL=style.css.map */

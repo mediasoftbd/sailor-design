@@ -624,6 +624,7 @@
 }
 .download-app-main {
   padding: 107px 0px 0px 0px;
+  margin-bottom: 200px;
   .download-bg-main {
     position: relative;
     img.app-bg {
@@ -678,6 +679,222 @@
           height: auto;
           max-width: 100%;
           border: none;
+        }
+      }
+    }
+  }
+  .how-app-work-content-wrap {
+    padding-left: 85px;
+    .title {
+      margin-bottom: 40px;
+      h3 {
+        margin: 0;
+        color: #170b35;
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+    .how-app-work-content {
+      padding-top: 30px;
+      padding-bottom: 45px;
+      margin-bottom: 40px;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 2px;
+        height: 100%;
+        background: url(../images/gradient-sep.png) no-repeat center center;
+        position: absolute;
+        top: 0;
+        left: 45px;
+      }
+      .pager-item {
+        display: block;
+        margin-top: 60px;
+        .single-how-app-work {
+          padding-left: 10px;
+          .icon-box {
+            display: table-cell;
+            vertical-align: middle;
+            .inner {
+              width: 74px;
+              height: 74px;
+
+              background: linear-gradient(
+                to right,
+                #6541c1 0%,
+                #d43396 98%,
+                #d43396 100%
+              );
+
+              position: relative;
+              border-radius: 50%;
+              text-align: center;
+
+              &::before {
+                content: '';
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                right: 2px;
+                bottom: 2px;
+                border-radius: 50%;
+                background: #fff;
+                opacity: 0;
+                -webkit-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+              }
+              i {
+                color: #fff;
+                line-height: 74px;
+                font-size: 44px;
+                position: relative;
+              }
+            }
+            .inner.deactive {
+              &::before {
+                opacity: 1;
+              }
+              i {
+                background: linear-gradient(
+                  to right,
+                  #6541c1 0%,
+                  #d43396 98%,
+                  #d43396 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+          .text-box {
+            padding-left: 40px;
+            display: table-cell;
+            vertical-align: middle;
+            h4 {
+              font-size: 20px;
+              color: #150a33;
+              text-transform: capitalize;
+              font-weight: 500;
+            }
+            p {
+              font-size: 14px;
+              line-height: 27px;
+              color: #656565;
+              margin-top: 10px;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+    .download-app-flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .download-btn {
+        vertical-align: middle;
+        background: linear-gradient(
+          to right,
+          rgb(101, 65, 193) 0%,
+          rgb(212, 51, 150) 98%,
+          rgb(212, 51, 150) 100%
+        );
+        position: relative;
+        padding: 8px 40px 8px 80px;
+        border-radius: 30px;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          right: 2px;
+          bottom: 2px;
+          border-radius: 28px;
+          background: #fff;
+          opacity: 1;
+          -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+        }
+        i {
+          font-size: 30px;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(#6541c1),
+            color-stop(98%, #d43396),
+            to(#d43396)
+          );
+          background: linear-gradient(
+            to right,
+            #6541c1 0%,
+            #d43396 98%,
+            #d43396 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          left: 35px;
+          -webkit-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+        }
+
+        span.avail {
+          font-size: 12.5px;
+          display: block;
+          background: linear-gradient(
+            to right,
+            #6541c1 0%,
+            #d43396 98%,
+            #d43396 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        span.store-name {
+          text-transform: uppercase;
+          font-size: 13px;
+          margin-top: 0;
+          display: block;
+          background: linear-gradient(
+            to right,
+            #6541c1 0%,
+            #d43396 98%,
+            #d43396 100%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        span.inner {
+          position: relative;
+          display: block;
+        }
+      }
+      .download-btn.active {
+        margin-right: 15px;
+        i {
+          color: #fff;
+          -webkit-text-fill-color: #fff;
+        }
+        &::before {
+          opacity: 0;
+        }
+        span.avail {
+          color: #fff;
+          -webkit-text-fill-color: #fff;
+        }
+        span.store-name {
+          color: #fff;
+          -webkit-text-fill-color: #fff;
+        }
+        span.inner {
+          position: relative;
+          display: block;
         }
       }
     }
