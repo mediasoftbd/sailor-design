@@ -516,5 +516,48 @@
   margin-bottom: 20px;
 }
 .doublead-banner-main {
+  margin-bottom: 20px;
+}
+
+.megazin-main {
   margin-bottom: 100px;
+  padding: 65px 0;
+  background: #f7f7f8;
+  .blog-header {
+    margin-bottom: 40px;
+    text-align: center;
+    h3 {
+      text-transform: uppercase;
+      font-size: 30px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 700;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 17px;
+      text-align: center;
+    }
+  }
+  .megazin-box {
+    .megazine-bg {
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: center center;
+      min-height: 450px;
+      position: relative;
+      overflow: hidden;
+      padding: 25px 25px 25px 25px;
+      border-radius: 4px 4px 4px 4px;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(57 57 58 / 44%);
+      }
+    }
+  }
 }
