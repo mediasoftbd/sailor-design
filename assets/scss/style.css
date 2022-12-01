@@ -1362,7 +1362,60 @@ p.curret-price {
 }
 .shop-layout-main .sidebar-main {
   min-height: 100vh;
-  background: red;
+  background: #fff;
+  border-top: 1px solid #a7a7a7;
+}
+.shop-layout-main .sidebar-main .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+  transform: scale(0.7) !important;
+}
+.shop-layout-main .sidebar-main .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+}
+.shop-layout-main .sidebar-main .sidebar-accordion-main {
+  margin: 20px 0;
+  padding: 0 20px;
+}
+.shop-layout-main .sidebar-main .sidebar-accordion-main .accordion-item {
+  margin-bottom: 10px;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: none;
+}
+.shop-layout-main .sidebar-main .sidebar-accordion-main .accordion-item .accordion-button {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  font-weight: 700;
+  color: #4d4d4d;
+  text-transform: capitalize;
+  padding-left: 0;
+}
+.shop-layout-main .sidebar-main .sidebar-accordion-main .accordion-item .accordion-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+.shop-layout-main .sidebar-main .sidebar-accordion-main .accordion-item .accordion-body {
+  padding: 0;
+}
+.shop-layout-main .sidebar-main .sidebar-accordion-main .accordion-item .accordion-body .form-check-input {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+.shop-layout-main .sidebar-main .sidebar-accordion-main .accordion-item .accordion-body .form-check-label {
+  font-size: 14px;
+  text-transform: capitalize;
 }
 .shop-layout-main .shop-grid-main {
   display: grid;
