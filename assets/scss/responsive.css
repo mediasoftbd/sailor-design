@@ -256,4 +256,37 @@ p.curret-price {
 .flas-counter .time {
   width: 30%;
   display: inline;
+}
+
+.form-control {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.mb-tweenty {
+  margin-bottom: 20px;
+}
+
+.product-description {
+  margin-top: 10px;
+}
+.product-description h4.product-name {
+  margin-bottom: 5px;
+}
+.product-description h4.product-name a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #909090;
+  transition: all 0.3s ease;
+}
+.product-description h4.product-name a:hover {
+  color: #d41f27;
+}
+.product-description p.price {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #2b2d42;
 }/*# sourceMappingURL=responsive.css.map */

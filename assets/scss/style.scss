@@ -946,3 +946,193 @@
     }
   }
 }
+
+// shop page start from here
+.shop-top-info {
+  padding: 24px;
+  background-color: #f6f6f6;
+  h4 {
+    font-size: 20px;
+    text-transform: none;
+    color: $text-color;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+  }
+  ul.nav {
+    li.nav-item {
+      a.nav-link {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+        height: 27px;
+        max-width: 100%;
+        line-height: 27px;
+        margin: 0 10px 10px 0;
+        color: #666;
+        font-weight: normal;
+        border: 1px solid #e5e5e5;
+        padding: 0 12px;
+        cursor: pointer;
+        background-color: #fff;
+        text-transform: capitalize;
+        font-size: 14px;
+        &:hover {
+          border-color: $text-color;
+        }
+      }
+    }
+  }
+}
+.shop-layout-main {
+  margin: 20px 0;
+  .col-form-label {
+    padding: 0 22px;
+    font-size: 14px;
+    color: $text-color;
+    text-transform: capitalize;
+  }
+  .form-control {
+    @include no-radious;
+    border: 1px solid #e5e5e5;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    &:focus {
+      border-color: $text-color;
+    }
+  }
+  .sidebar-main {
+    min-height: 100vh;
+    background: red;
+  }
+  .shop-grid-main {
+    display: grid;
+    grid-gap: 17px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    .single-product {
+      .image-box {
+        min-height: 395px;
+        position: relative;
+        overflow: hidden;
+        img.secondary-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 0.5s;
+        }
+        a.add-towish-btn {
+          @include add-towish-btn;
+          &:hover {
+            color: $logo-red;
+            background: #fff;
+          }
+        }
+        .product-view-sets {
+          @include product-view-sets;
+          ul.nav {
+            justify-content: center;
+            li.nav-item {
+              a.nav-link {
+                @include product-view-sets-nav-link;
+                margin-right: 10px;
+                i {
+                  font-size: 17px;
+                }
+                &:hover {
+                  background: $logo-red;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .image-box {
+          img.secondary-image {
+            opacity: 1;
+          }
+        }
+        .product-view-sets {
+          bottom: 0;
+        }
+      }
+      .product-description {
+        margin-top: 10px;
+        h4.product-name {
+          margin-bottom: 5px;
+          a {
+            @include common-product-title;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $logo-red;
+            }
+          }
+        }
+        p.price {
+          @include common-product-price;
+        }
+      }
+      .sailor-club-discount {
+        position: relative;
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        padding-left: 81px;
+        direction: ltr;
+        margin-top: 6px;
+        background: #ffe2d3;
+        border-radius: 1px;
+        .sailor-club-discount-logo {
+          color: #873c00;
+          margin: 0 4px 0 15px;
+          img {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 81px;
+            transform: translateY(-50%);
+          }
+        }
+        .discount {
+          text-align: center;
+          background: #873c00;
+          padding: 0 2px;
+          div {
+            transform: scale(0.8333);
+            color: #fff;
+          }
+        }
+      }
+      .product-level-tag-flex {
+        margin-top: 10px;
+        display: flex;
+        overflow: hidden;
+        .Sailor-label {
+          display: inline-block;
+          padding: 3px 6px;
+          font-size: 12px;
+          line-height: 1.1667;
+          margin-right: 8px;
+          background-color: #f6f6f6;
+          color: #666666;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          background-color: #fff8eb;
+          color: #a86104;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+// shop page end here

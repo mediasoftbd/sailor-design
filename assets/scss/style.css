@@ -260,6 +260,39 @@ p.curret-price {
   display: inline;
 }
 
+.form-control {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.mb-tweenty {
+  margin-bottom: 20px;
+}
+
+.product-description {
+  margin-top: 10px;
+}
+.product-description h4.product-name {
+  margin-bottom: 5px;
+}
+.product-description h4.product-name a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #909090;
+  transition: all 0.3s ease;
+}
+.product-description h4.product-name a:hover {
+  color: #d41f27;
+}
+.product-description p.price {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #2b2d42;
+}
+
 .top-header {
   background: #282828;
   padding: 5px 0;
@@ -1268,4 +1301,230 @@ p.curret-price {
 }
 .copyright-main p.copyright a {
   color: #fff;
+}
+
+.shop-top-info {
+  padding: 24px;
+  background-color: #f6f6f6;
+}
+.shop-top-info h4 {
+  font-size: 20px;
+  text-transform: none;
+  color: #4d4d4d;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+.shop-top-info ul.nav li.nav-item a.nav-link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+  height: 27px;
+  max-width: 100%;
+  line-height: 27px;
+  margin: 0 10px 10px 0;
+  color: #666;
+  font-weight: normal;
+  border: 1px solid #e5e5e5;
+  padding: 0 12px;
+  cursor: pointer;
+  background-color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.shop-top-info ul.nav li.nav-item a.nav-link:hover {
+  border-color: #4d4d4d;
+}
+
+.shop-layout-main {
+  margin: 20px 0;
+}
+.shop-layout-main .col-form-label {
+  padding: 0 22px;
+  font-size: 14px;
+  color: #4d4d4d;
+  text-transform: capitalize;
+}
+.shop-layout-main .form-control {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border: 1px solid #e5e5e5;
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.shop-layout-main .form-control:focus {
+  border-color: #4d4d4d;
+}
+.shop-layout-main .sidebar-main {
+  min-height: 100vh;
+  background: red;
+}
+.shop-layout-main .shop-grid-main {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box {
+  min-height: 395px;
+  position: relative;
+  overflow: hidden;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box img.secondary-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box a.add-towish-btn {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 15px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box a.add-towish-btn:hover {
+  color: #d41f27;
+  background: #fff;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box .product-view-sets {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  bottom: -60px;
+  padding: 5px 17px;
+  height: 58px;
+  transition: 1s;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box .product-view-sets ul.nav {
+  justify-content: center;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box .product-view-sets ul.nav li.nav-item a.nav-link {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  color: #909090;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  margin-right: 10px;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box .product-view-sets ul.nav li.nav-item a.nav-link i {
+  font-size: 17px;
+}
+.shop-layout-main .shop-grid-main .single-product .image-box .product-view-sets ul.nav li.nav-item a.nav-link:hover {
+  background: #d41f27;
+  color: #fff;
+}
+.shop-layout-main .shop-grid-main .single-product:hover .image-box img.secondary-image {
+  opacity: 1;
+}
+.shop-layout-main .shop-grid-main .single-product:hover .product-view-sets {
+  bottom: 0;
+}
+.shop-layout-main .shop-grid-main .single-product .product-description {
+  margin-top: 10px;
+}
+.shop-layout-main .shop-grid-main .single-product .product-description h4.product-name {
+  margin-bottom: 5px;
+}
+.shop-layout-main .shop-grid-main .single-product .product-description h4.product-name a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #909090;
+  transition: all 0.3s ease;
+}
+.shop-layout-main .shop-grid-main .single-product .product-description h4.product-name a:hover {
+  color: #d41f27;
+}
+.shop-layout-main .shop-grid-main .single-product .product-description p.price {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #2b2d42;
+}
+.shop-layout-main .shop-grid-main .single-product .sailor-club-discount {
+  position: relative;
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  padding-left: 81px;
+  direction: ltr;
+  margin-top: 6px;
+  background: #ffe2d3;
+  border-radius: 1px;
+}
+.shop-layout-main .shop-grid-main .single-product .sailor-club-discount .sailor-club-discount-logo {
+  color: #873c00;
+  margin: 0 4px 0 15px;
+}
+.shop-layout-main .shop-grid-main .single-product .sailor-club-discount .sailor-club-discount-logo img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 81px;
+  transform: translateY(-50%);
+}
+.shop-layout-main .shop-grid-main .single-product .sailor-club-discount .discount {
+  text-align: center;
+  background: #873c00;
+  padding: 0 2px;
+}
+.shop-layout-main .shop-grid-main .single-product .sailor-club-discount .discount div {
+  transform: scale(0.8333);
+  color: #fff;
+}
+.shop-layout-main .shop-grid-main .single-product .product-level-tag-flex {
+  margin-top: 10px;
+  display: flex;
+  overflow: hidden;
+}
+.shop-layout-main .shop-grid-main .single-product .product-level-tag-flex .Sailor-label {
+  display: inline-block;
+  padding: 3px 6px;
+  font-size: 12px;
+  line-height: 1.1667;
+  margin-right: 8px;
+  background-color: #f6f6f6;
+  color: #666666;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: #fff8eb;
+  color: #a86104;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */

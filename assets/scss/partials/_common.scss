@@ -260,3 +260,27 @@ p.curret-price {
     display: inline;
   }
 }
+
+.form-control {
+  @include no-radious;
+}
+
+.mb-tweenty {
+  margin-bottom: 20px;
+}
+.product-description {
+  margin-top: 10px;
+  h4.product-name {
+    margin-bottom: 5px;
+    a {
+      @include common-product-title;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $logo-red;
+      }
+    }
+  }
+  p.price {
+    @include common-product-price;
+  }
+}
