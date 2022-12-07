@@ -1799,7 +1799,7 @@ p.curret-price {
   right: 30px;
 }
 .details-main .custom-details-slider .product-info-main .product-title-flex .icon-box:hover .pop-share-main {
-  display: none;
+  display: block;
 }
 .details-main .custom-details-slider .product-info-main .price {
   font-size: 25px;
