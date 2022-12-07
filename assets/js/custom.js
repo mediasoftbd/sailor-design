@@ -112,3 +112,27 @@ var swiper = new Swiper('.megazine-slider', {
     clickable: true,
   },
 });
+
+// product details page slider
+
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+});
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  vertical: true,
+  arrows: true,
+  prevArrow:
+    "<button type='button' class='slick-up'><i class='fa-solid fa-chevron-up'></i></button>",
+  nextArrow:
+    "<button type='button' class='slick-down'><i class='fa-solid fa-chevron-down'></i></button>",
+});
