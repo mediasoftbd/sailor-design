@@ -146,3 +146,18 @@
   @include no-radious;
   border: none;
 }
+
+@mixin size-lists-navlinks {
+  border: 1px solid $border-light;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: $text-color;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}

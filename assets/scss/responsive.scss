@@ -1,8 +1,9 @@
-@import "partials/variables";
-@import "partials/mixins";
-@import "partials/classes";
-@import "partials/color";
-@import "partials/common";
-
-
-
+@media (min-width: 1600px) {
+  .shop-grid-main {
+    .single-product {
+      .image-box {
+        min-height: 395px;
+      }
+    }
+  }
+}

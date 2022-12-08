@@ -1450,7 +1450,7 @@ p.curret-price {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .shop-layout-main .shop-grid-main .single-product .image-box {
-  min-height: 395px;
+  min-height: 328px;
   position: relative;
   overflow: hidden;
 }
@@ -1607,6 +1607,9 @@ p.curret-price {
   background-color: #fff8eb;
   color: #a86104;
   text-transform: capitalize;
+}
+.shop-layout-main .container .shop-grid-main .single-product .image-box {
+  min-height: 328px;
 }
 
 .breadcrum-main {
@@ -2083,6 +2086,7 @@ p.curret-price {
 
 .review-main {
   margin-top: 100px;
+  margin-bottom: 40px;
 }
 .review-main .review-overview {
   background: #f7f8fa;
@@ -2149,4 +2153,169 @@ p.curret-price {
 }
 .review-main .review-overview .right-box .progress-flex:last-child {
   margin-bottom: 0;
+}
+.review-main .review-tabs-main {
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.review-main .review-tabs-main .left-box {
+  flex-basis: 40%;
+}
+.review-main .review-tabs-main .left-box .nav-tabs {
+  border: none;
+}
+.review-main .review-tabs-main .left-box .nav-tabs .nav-item .nav-link {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  text-transform: capitalize;
+  color: #909090;
+  font-size: 14px;
+  border: none;
+  padding-left: 0;
+  position: relative;
+  margin-right: 20px;
+  font-weight: 700;
+}
+.review-main .review-tabs-main .left-box .nav-tabs .nav-item .nav-link::before {
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  content: "";
+}
+.review-main .review-tabs-main .left-box .nav-tabs .nav-item .nav-link.active {
+  color: #4d4d4d;
+}
+.review-main .review-tabs-main .left-box .nav-tabs .nav-item .nav-link.active::before {
+  background: #000;
+}
+.review-main .review-tabs-main .right-box {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.review-main .review-tabs-main .right-box .single-sort {
+  flex-basis: 45%;
+}
+.review-main .review-tabs-main .right-box .single-sort .col-form-label {
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.review-main .review-tabs-main .right-box .single-sort .form-control {
+  font-size: 14px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+.review-main .single-user-review {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px dashed #e5e5e5;
+  padding: 25px 0;
+}
+.review-main .single-user-review .user {
+  flex-basis: 20%;
+}
+.review-main .single-user-review .user .name {
+  font-size: 17px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.review-main .single-user-review .user .date {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.review-main .single-user-review .review {
+  flex-basis: 40%;
+  padding: 0 20px;
+}
+.review-main .single-user-review .review .rating {
+  margin-bottom: 20px;
+}
+.review-main .single-user-review .review .rating ul.nav li.nav-item a.nav-link {
+  color: #facf19;
+  padding: 0;
+  margin-right: 10px;
+}
+.review-main .single-user-review .review h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.review-main .single-user-review .review .tags {
+  display: inline-block;
+  margin-right: 10px;
+  color: #909090;
+  text-transform: capitalize;
+}
+.review-main .single-user-review .review .tags span {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.review-main .single-user-review .review-image {
+  flex-basis: 20%;
+}
+.review-main .single-user-review .review-image .image-box {
+  width: 108px;
+  height: 108px;
+  line-height: 108px;
+  overflow: hidden;
+}
+.review-main .single-user-review .review-image .image-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top;
+  object-position: top;
+}
+.review-main .single-user-review .helpful {
+  flex-basis: 20%;
+}
+.review-main .single-user-review .helpful a.is-helpful-btn {
+  color: #909090;
+  font-size: 14px;
+}
+.review-main .single-user-review .helpful a.is-helpful-btn i {
+  margin-right: 10px;
+}
+.review-main .single-user-review .helpful a.is-helpful-btn:hover {
+  color: #d41f27;
+}
+
+.related-search-main {
+  margin: 100px 0;
+}
+.related-search-main ul.nav li.nav-item {
+  cursor: pointer;
+}
+.related-search-main ul.nav li.nav-item a.nav-link {
+  border: 1px solid #f1f1f1;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.related-search-main ul.nav li.nav-item a.nav-link:hover {
+  background: #4d4d4d;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
