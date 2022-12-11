@@ -1875,3 +1875,168 @@
   }
 }
 // details page end here
+
+// checkout page start from here
+
+.checkout-main {
+  margin: 100px 0;
+  .checkout-box {
+    border: 1px solid #ececec;
+    padding: 40px;
+    .progress-form {
+      .progress-form-tabs {
+        display: flex;
+        align-items: start;
+        margin-bottom: 40px;
+        column-gap: 2px;
+        .tabs-item {
+          flex: 1 1 0%;
+          background-color: transparent;
+          border: 5px solid #d9e2ec;
+          @include no-radious;
+          letter-spacing: 0.025em;
+          font-size: 16px;
+          line-height: 1.4;
+          position: relative;
+          border: 0;
+          border-top: 5px solid #d9e2ec;
+          text-align: left;
+          padding-top: 20px;
+          font-weight: 700;
+          padding-left: 0;
+          padding-right: 0;
+          text-transform: capitalize;
+          &::before {
+            background-color: #127fbf;
+            content: '';
+            height: 5px;
+            left: 0;
+            position: absolute;
+            top: -5px;
+            transition: width 0.2s ease-in-out;
+          }
+          .step {
+            color: #127fbf;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.2s ease-in-out;
+            display: block;
+            letter-spacing: normal;
+          }
+        }
+        .tabs-item[aria-selected='true'] {
+          display: block;
+          &::before {
+            width: 50%;
+          }
+        }
+        .tabs-item[data-complete='true']::before {
+          width: 100%;
+        }
+        .tabs-item[aria-disabled='true'] {
+          color: #627d98;
+        }
+      }
+      .form-label {
+        color: #102a43;
+        font-size: 17px;
+        display: block;
+        position: relative;
+        font-weight: 700;
+      }
+      .form-label > [data-required='true']::after {
+        content: '*';
+        padding-left: 0.25em;
+        position: absolute;
+        color: $logo-red;
+      }
+      .form-control {
+        padding-left: 20px;
+        padding-right: 20px;
+        appearance: none;
+        background: none;
+        background-color: #fff;
+        border: 1px solid #bcccdc;
+        height: 48px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+      }
+      .form__error-text {
+        color: $logo-red;
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 5px;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      input[aria-invalid='true'] {
+        border-color: $logo-red;
+      }
+      select[aria-invalid='true'] {
+        border-color: $logo-red;
+      }
+      textarea[aria-invalid='true'] {
+        border-color: $logo-red;
+      }
+      .continue-btn {
+        appearance: none;
+        background: none;
+        background-color: $logo-blue;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 20px;
+        text-transform: uppercase;
+      }
+      .back-btn {
+        background: transparent;
+        border: none;
+        margin-right: 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 8px 20px;
+      }
+    }
+  }
+  .cart-sidebar-main {
+    padding: 40px;
+    border: 1px solid #ececec;
+    h3 {
+      text-transform: capitalize;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .table {
+      margin-bottom: 0;
+      tr {
+        td:nth-child(1) {
+          min-width: 50%;
+          font-size: 14px;
+          text-transform: capitalize;
+          font-weight: 700;
+          text-align: left;
+        }
+        td {
+          padding: 5px 0;
+        }
+        td:nth-child(2) {
+          text-align: right;
+        }
+        td.text-bold {
+          font-weight: 700;
+        }
+      }
+      tr.top-border {
+        border-top: 2px solid #000;
+      }
+    }
+  }
+}
+
+// checkout page end here
