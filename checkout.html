@@ -257,334 +257,481 @@
     </section>
     <section class="checkout-main">
         <div class="container">
+
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="col-12">
                     <div class="checkout-box">
-                        <form id="progress-form" class="progress-form" action="" lang="en" novalidate>
+                        <form id="" class="progress-form" action="" lang="en" novalidate>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="common-fieldset-main">
+                                        <fieldset class="common-fieldset">
+                                            <legend class="rounded">Billing address</legend>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="first-name" class="form-label">
+                                                            First name
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+                                                        <input id="first-name" class="form-control" type="text"
+                                                            name="first-name" autocomplete="given-name" required
+                                                            placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="last-name" class="form-label">
+                                                            Last name
 
-                            <!-- Step Navigation -->
-                            <div class=" progress-form-tabs" role="tablist">
-                                <button id="progress-form__tab-1" class=" tabs-item" type="button" role="tab"
-                                    aria-controls="progress-form__panel-1" aria-selected="true">
+                                                        </label>
+                                                        <input id="last-name" class="form-control" type="text"
+                                                            name="last-name" autocomplete="family-name"
+                                                            placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="phone-number" class="form-label">
+                                                            Phone number
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+                                                        <input id="phone-number" class="form-control" type="text"
+                                                            name="phone-number" autocomplete="tel" inputmode="tel"
+                                                            required placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="email-address" class="form-label">
+                                                            Email address
 
-                                    <span class="d-block step" aria-hidden="true">
-                                        Step 1
-                                        <span class="d-sm-none">of 3</span>
+                                                        </label>
+                                                        <input id="email-address" class="form-control" type="email"
+                                                            name="email-address" autocomplete="email" inputmode="email"
+                                                            placeholder="E-mail Address">
+                                                    </div>
+                                                </div>
 
-                                    </span>
-                                    billing address
-                                </button>
-                                <button id="progress-form__tab-2" class=" tabs-item" type="button" role="tab"
-                                    aria-controls="progress-form__panel-2" aria-selected="false" tabindex="-1"
-                                    aria-disabled="true">
-                                    <span class="d-block step" aria-hidden="true">Step 2 <span class="d-sm-none">of
-                                            3</span></span>
-                                    Shipping address
-                                </button>
-                                <button id="progress-form__tab-3" class=" tabs-item" type="button" role="tab"
-                                    aria-controls="progress-form__panel-3" aria-selected="false" tabindex="-1"
-                                    aria-disabled="true">
-                                    <span class="d-block step" aria-hidden="true">Step 3 <span class="d-sm-none">of
-                                            3</span></span>
-                                    payment
-                                </button>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="address-state" class="form-label">
+                                                            District
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+                                                        <select id="address-state" name="address-state"
+                                                            autocomplete="shipping address-level1" required
+                                                            class="form-control">
+                                                            <option value="" disabled selected>Please select</option>
+                                                            <option value="AL">Alabama</option>
+                                                            <option value="AK">Alaska</option>
+                                                            <option value="AZ">Arizona</option>
+                                                            <option value="AK">Arkansas</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="address-zip" class="form-label">
+                                                            Postal code
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+                                                        <input id="address-zip" type="text" name="address-zip"
+                                                            autocomplete="shipping postal-code" inputmode="numeric"
+                                                            required class="form-control" placeholder="Postal Code">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group mb-0">
+                                                        <label for="address" class="form-label">
+                                                            Address
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+
+                                                        <textarea class="form-control" id="address" name="address"
+                                                            autocomplete="shipping address-line1" required
+                                                            style="height: 100px"
+                                                            placeholder="Address Details"></textarea>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="common-fieldset-main">
+                                        <fieldset class="common-fieldset">
+                                            <legend class="rounded">Cupon</legend>
+
+                                            <div class="row g-3 align-items-center">
+
+                                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                                    <input type="text" id="" class="form-control"
+                                                        aria-describedby="cupon" placeholder="Cupon Code Here">
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                    <button type="button" class="continue-btn w-100">
+                                                        apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="common-fieldset-main">
+                                        <fieldset class="common-fieldset">
+                                            <legend class="rounded">Club points</legend>
+
+                                            <div class="row g-3 align-items-center">
+
+                                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                                    <input type="text" id="" class="form-control"
+                                                        aria-describedby="cupon" placeholder="Membership Number">
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                    <button type="button" class="continue-btn w-100">
+                                                        apply
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                    <div class="common-fieldset-main">
+                                        <fieldset class="common-fieldset">
+                                            <legend class="rounded">shipping address</legend>
+
+                                            <div class="row mb-3">
+                                                <div class="col-4">
+                                                    <label class="form-check-label2 " for="">
+                                                        Select delivery type
+                                                    </label>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            value="home-delivery" name="deliveryType"
+                                                            id="pickupStoreChNo" checked="">
+                                                        <label class="form-check-label" for="pickupStoreChNo">
+                                                            Home delivery
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            value="pickup-from-store" name="deliveryType"
+                                                            id="pickupStoreChYes">
+                                                        <label class="form-check-label" for="pickupStoreChYes">
+                                                            Pickup from store
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <label class="form__choice-wrapper">
+                                                        <input id="" type="checkbox" name="" value="">
+                                                        <span>Same as billing address</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <label class="form-check-label2 mb-3" for="">
+                                                        Select from saved address or Enter Your address
+                                                    </label>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <a href="javascript:void(0)" class="userAddress selected"
+                                                        useraddressattributeid="18">
+                                                        <div class="address-books">
+
+                                                            <address>
+                                                                <span class="name19">Sagor</span>
+                                                                <br>
+                                                                District: <span class="district">Dinajpur</span>
+                                                                <br>
+
+                                                                Email: <span class="">saroarsagor447@gmail.com</span>
+                                                                <br>
+                                                                Phn No: <span class="mobile">01772594705</span>
+                                                                <br>
+                                                                Postcode: <span class="postcode">456547</span>
+                                                                <br>
+                                                                Address : <span class="address">fghfg</span>
+                                                            </address>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <a href="javascript:void(0)" class="userAddress"
+                                                        useraddressattributeid="19">
+                                                        <div class="address-books">
+
+                                                            <address>
+                                                                <span class="name19">Sagor</span>
+                                                                <br>
+                                                                District: <span class="district">Dinajpur</span>
+                                                                <br>
+
+                                                                Email: <span class="">saroarsagor447@gmail.com</span>
+                                                                <br>
+                                                                Phn No: <span class="mobile">01772594705</span>
+                                                                <br>
+                                                                Postcode: <span class="postcode">456547</span>
+                                                                <br>
+                                                                Address : <span class="address">fghfg</span>
+                                                            </address>
+                                                        </div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="first-name" class="form-label">
+                                                            First name
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+                                                        <input id="first-name" class="form-control" type="text"
+                                                            name="first-name" autocomplete="given-name" required
+                                                            placeholder="First Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="last-name" class="form-label">
+                                                            Last name
+
+                                                        </label>
+                                                        <input id="last-name" class="form-control" type="text"
+                                                            name="last-name" autocomplete="family-name"
+                                                            placeholder="Last Name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="phone-number" class="form-label">
+                                                            Phone number
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+                                                        <input id="phone-number" class="form-control" type="text"
+                                                            name="phone-number" autocomplete="tel" inputmode="tel"
+                                                            required placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="email-address" class="form-label">
+                                                            Email address
+
+                                                        </label>
+                                                        <input id="email-address" class="form-control" type="email"
+                                                            name="email-address" autocomplete="email" inputmode="email"
+                                                            placeholder="E-mail Address">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="address-state" class="form-label">
+                                                            District
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+                                                        <select id="address-state" name="address-state"
+                                                            autocomplete="shipping address-level1" required
+                                                            class="form-control">
+                                                            <option value="" disabled selected>Please select</option>
+                                                            <option value="AL">Alabama</option>
+                                                            <option value="AK">Alaska</option>
+                                                            <option value="AZ">Arizona</option>
+                                                            <option value="AK">Arkansas</option>
+
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label for="address-zip" class="form-label">
+                                                            Postal code
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+                                                        <input id="address-zip" type="text" name="address-zip"
+                                                            autocomplete="shipping postal-code" inputmode="numeric"
+                                                            required class="form-control" placeholder="Postal Code">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group mb-0">
+                                                        <label for="address" class="form-label">
+                                                            Address
+                                                            <span data-required="true" aria-hidden="true"></span>
+                                                        </label>
+
+                                                        <textarea class="form-control" id="address" name="address"
+                                                            autocomplete="shipping address-line1" required
+                                                            style="height: 100px"
+                                                            placeholder="Address Details"></textarea>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </fieldset>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                    <div class="common-fieldset-main">
+                                        <fieldset class="common-fieldset">
+                                            <legend class="rounded">review cart</legend>
+                                            <div class="table-responsive review-cart-table">
+                                                <table class="table mb-0">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./assets/images/products/2.webp" alt=""
+                                                                    class="img-fluid">
+                                                            </td>
+                                                            <td>
+                                                                <h3>
+                                                                    <a href="#">Mens Casual Shirt (Red Check)
+                                                                    </a>
+                                                                </h3>
+                                                                <p class="size">Size : XL</p>
+                                                                <p class="size">Qty : 01</p>
+                                                                <p class="categories">
+                                                                    Categories: <a href="#">Mens Casual Shirt</a> <a
+                                                                        href="#">MENS TOP WEAR MENS</a>
 
-                            <!-- / End Step Navigation -->
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <p class="price">Price : 1790</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <img src="./assets/images/products/2.webp" alt=""
+                                                                    class="img-fluid">
+                                                            </td>
+                                                            <td>
+                                                                <h3>
+                                                                    <a href="#">Mens Casual Shirt (Red Check)
+                                                                    </a>
+                                                                </h3>
+                                                                <p class="size">Size : XL</p>
+                                                                <p class="size">Qty : 01</p>
+                                                                <p class="categories">
+                                                                    Categories: <a href="#">Mens Casual Shirt</a> <a
+                                                                        href="#">MENS TOP WEAR MENS</a>
 
-                            <!-- Step 1 -->
-                            <section id="progress-form__panel-1" role="tabpanel" aria-labelledby="progress-form__tab-1"
-                                tabindex="0">
-                                <div class="common-fieldset-main">
-                                    <fieldset class="common-fieldset">
-                                        <legend class="rounded">Billing address</legend>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="first-name" class="form-label">
-                                                        First name
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-                                                    <input id="first-name" class="form-control" type="text"
-                                                        name="first-name" autocomplete="given-name" required
-                                                        placeholder="First Name">
-                                                </div>
+                                                                </p>
+                                                            </td>
+                                                            <td>
+                                                                <p class="price">Price : 1790</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="last-name" class="form-label">
-                                                        Last name
-
-                                                    </label>
-                                                    <input id="last-name" class="form-control" type="text"
-                                                        name="last-name" autocomplete="family-name"
-                                                        placeholder="Last Name">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="phone-number" class="form-label">
-                                                        Phone number
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-                                                    <input id="phone-number" class="form-control" type="text"
-                                                        name="phone-number" autocomplete="tel" inputmode="tel" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="email-address" class="form-label">
-                                                        Email address
-
-                                                    </label>
-                                                    <input id="email-address" class="form-control" type="email"
-                                                        name="email-address" autocomplete="email" inputmode="email">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="address-state" class="form-label">
-                                                        District
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-                                                    <select id="address-state" name="address-state"
-                                                        autocomplete="shipping address-level1" required
-                                                        class="form-control">
-                                                        <option value="" disabled selected>Please select</option>
-                                                        <option value="AL">Alabama</option>
-                                                        <option value="AK">Alaska</option>
-                                                        <option value="AZ">Arizona</option>
-                                                        <option value="AK">Arkansas</option>
-
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="address-zip" class="form-label">
-                                                        Postal code
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-                                                    <input id="address-zip" type="text" name="address-zip"
-                                                        autocomplete="shipping postal-code" inputmode="numeric" required
-                                                        class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label for="address" class="form-label">
-                                                        Address
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-
-                                                    <textarea class="form-control" id="address" name="address"
-                                                        autocomplete="shipping address-line1" required
-                                                        style="height: 100px"></textarea>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                <label class="form__choice-wrapper">
-                                                    <input id="email-newsletter" type="checkbox" name="email-newsletter"
-                                                        value="Yes" checked>
-                                                    <span>Yes, I would like to sign up to receive the newsletter</span>
+                                        </fieldset>
+                                    </div>
+                                    <div class="common-fieldset-main">
+                                        <fieldset class="common-fieldset">
+                                            <legend class="rounded">payment Options</legend>
+                                            <label for="" class="form-label"> Select payment method </label>
+                                            <br>
+                                            <div class="form-check form-check-inline payment_method_radio">
+                                                <input class="form-check-input" type="radio" name="payment_method"
+                                                    id="payment_method" value="cash_on_delivery">
+                                                <label class="form-check-label" for="">
+                                                    <img src="./assets/images/icon/cod.png" alt="" style="width: 65px">
                                                 </label>
                                             </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5 text-end">
-                                                <button type="button" data-action="next" class="continue-btn">
-                                                    Continue
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </section>
-                            <!-- / End Step 1 -->
-
-                            <!-- Step 2 -->
-                            <section id="progress-form__panel-2" role="tabpanel" aria-labelledby="progress-form__tab-2"
-                                tabindex="0" hidden>
-                                <div class="common-fieldset-main">
-                                    <fieldset class="common-fieldset">
-                                        <legend class="rounded">shipping address</legend>
-                                        <div class="row mb-3">
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                <label class="form__choice-wrapper">
-                                                    <input id="" type="checkbox" name="" value="">
-                                                    <span>Same as billing address</span>
+                                            <div class="form-check form-check-inline payment_method_radio">
+                                                <input class="form-check-input" type="radio" name="payment_method"
+                                                    id="payment_method" value="sslcommerz">
+                                                <label class="form-check-label" for="">
+                                                    <img src="./assets/images/icon/ssl.png" alt="" style="width: 125px">
                                                 </label>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
-                                                <div class="form-group">
-                                                    <label for="first-name" class="form-label">
-                                                        First name
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-                                                    <input id="first-name" class="form-control" type="text"
-                                                        name="first-name" autocomplete="given-name" required
-                                                        placeholder="First Name">
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="last-name" class="form-label">
-                                                        Last name
-
-                                                    </label>
-                                                    <input id="last-name" class="form-control" type="text"
-                                                        name="last-name" autocomplete="family-name"
-                                                        placeholder="Last Name">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="phone-number" class="form-label">
-                                                        Phone number
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-                                                    <input id="phone-number" class="form-control" type="text"
-                                                        name="phone-number" autocomplete="tel" inputmode="tel" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="email-address" class="form-label">
-                                                        Email address
-
-                                                    </label>
-                                                    <input id="email-address" class="form-control" type="email"
-                                                        name="email-address" autocomplete="email" inputmode="email">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="address-state" class="form-label">
-                                                        District
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-                                                    <select id="address-state" name="address-state"
-                                                        autocomplete="shipping address-level1" required
-                                                        class="form-control">
-                                                        <option value="" disabled selected>Please select</option>
-                                                        <option value="AL">Alabama</option>
-                                                        <option value="AK">Alaska</option>
-                                                        <option value="AZ">Arizona</option>
-                                                        <option value="AK">Arkansas</option>
-
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                                                <div class="form-group">
-                                                    <label for="address-zip" class="form-label">
-                                                        Postal code
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-                                                    <input id="address-zip" type="text" name="address-zip"
-                                                        autocomplete="shipping postal-code" inputmode="numeric" required
-                                                        class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                                <div class="form-group">
-                                                    <label for="address" class="form-label">
-                                                        Address
-                                                        <span data-required="true" aria-hidden="true"></span>
-                                                    </label>
-
-                                                    <textarea class="form-control" id="address" name="address"
-                                                        autocomplete="shipping address-line1" required
-                                                        style="height: 100px"></textarea>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5 text-end">
-                                                <button type="button" class="back-btn" data-action="prev">
-                                                    Back
-                                                </button>
-                                                <button type="button" data-action="next" class="continue-btn">
-                                                    Continue
-                                                </button>
-
-                                            </div>
-                                        </div>
-                                    </fieldset>
+                                            <br>
+                                            <label class="form__choice-wrapper mt-3">
+                                                <input id="" type="checkbox" name="" value="">
+                                                <span>I Agree With Terms & Conditions, Return And Refund Policy And
+                                                    Privacy Policy Of sailor.clothing</span>
+                                            </label>
+                                        </fieldset>
+                                    </div>
                                 </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
-                            </section>
-                            <!-- / End Step 2 -->
+                                    <div class="cart-sidebar-main">
+                                        <div class="common-fieldset-main">
+                                            <fieldset class="common-fieldset">
+                                                <legend class="rounded">summary</legend>
 
-                            <!-- Step 3 -->
-                            <section id="progress-form__panel-3" role="tabpanel" aria-labelledby="progress-form__tab-3"
-                                tabindex="0" hidden>
+                                                <div class="table-responsive">
+                                                    <table class="table table-borderless">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>sub total </td>
+                                                                <td>1550</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>shipping charge</td>
+                                                                <td>150</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>discount</td>
+                                                                <td>150</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>VAT</td>
+                                                                <td>50</td>
+                                                            </tr>
+                                                            <tr class="top-border">
+                                                                <td>total</td>
+                                                                <td class="text-bold">2000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="w-100">
 
-                                test
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mt-5 text-end">
-                                    <button type="button" class="back-btn" data-action="prev">
-                                        Back
-                                    </button>
-                                    <button type="button" data-action="next" class="continue-btn">
-                                        Continue
-                                    </button>
 
+
+                                                    <button type="submit" class="orderNowButton" id="submit_btn">order
+                                                        now
+                                                    </button>
+
+
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                    </div>
                                 </div>
-                            </section>
-                            <!-- / End Step 3 -->
-
-                            <!-- Thank You -->
-                            <section id="progress-form__thank-you" hidden>
-                                <p>Thank you for your submission!</p>
-                                <p>We appreciate you contacting us. One of our team members will get back to you
-                                    very&nbsp;soon.</p>
-                            </section>
-                            <!-- / End Thank You -->
-
+                            </div>
                         </form>
-                        <!-- / End Progress Form -->
+                    </div>
 
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                    <div class="cart-sidebar-main">
-                        <h3>summary</h3>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr>
-                                        <td>sub total </td>
-                                        <td>1550</td>
-                                    </tr>
-                                    <tr>
-                                        <td>shipping charge</td>
-                                        <td>150</td>
-                                    </tr>
-                                    <tr>
-                                        <td>discount</td>
-                                        <td>150</td>
-                                    </tr>
-                                    <tr class="top-border">
-                                        <td>total</td>
-                                        <td class="text-bold">1700</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -756,740 +903,7 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/custom.js"></script>
-    <script>
 
-        // checkout page
-        console.clear();
-
-        function ready(fn) {
-            if (document.readyState === 'complete' || document.readyState === 'interactive') {
-                setTimeout(fn, 1);
-                document.removeEventListener('DOMContentLoaded', fn);
-            } else {
-                document.addEventListener('DOMContentLoaded', fn);
-            }
-        }
-
-        ready(function () {
-
-            // Global Constants
-
-            const progressForm = document.getElementById('progress-form');
-
-            const tabItems = progressForm.querySelectorAll('[role="tab"]')
-                , tabPanels = progressForm.querySelectorAll('[role="tabpanel"]');
-
-            let currentStep = 0;
-
-            // Form Validation
-
-            /*****************************************************************************
-             * Expects a string.
-             *
-             * Returns a boolean if the provided value *reasonably* matches the pattern
-             * of a US phone number. Optional extension number.
-             */
-
-            const isValidPhone = val => {
-                const regex = new RegExp(/^[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?$/);
-
-                return regex.test(val);
-            };
-
-            /*****************************************************************************
-             * Expects a string.
-             *
-             * Returns a boolean if the provided value *reasonably* matches the pattern
-             * of a real email address.
-             *
-             * NOTE: There is no such thing as a perfect regular expression for email
-             *       addresses; further, the validity of an email address cannot be
-             *       verified on the front end. This is the closest we can get without
-             *       our own service or a service provided by a third party.
-             *
-             * RFC 5322 Official Standard: https://emailregex.com/
-             */
-
-            const isValidEmail = val => {
-                const regex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-
-                return regex.test(val);
-            };
-
-            /*****************************************************************************
-             * Expects a Node (input[type="text"] or textarea).
-             */
-
-            const validateText = field => {
-                const val = field.value.trim();
-
-                if (val === '' && field.required) {
-                    return {
-                        isValid: false
-                    };
-                } else {
-                    return {
-                        isValid: true
-                    };
-                }
-            };
-
-            /*****************************************************************************
-             * Expects a Node (select).
-             */
-
-            const validateSelect = field => {
-                const val = field.value.trim();
-
-                if (val === '' && field.required) {
-                    return {
-                        isValid: false,
-                        message: 'Please select an option from the dropdown menu.'
-                    };
-                } else {
-                    return {
-                        isValid: true
-                    };
-                }
-            };
-
-            /*****************************************************************************
-             * Expects a Node (fieldset).
-             */
-
-            const validateGroup = fieldset => {
-                const choices = fieldset.querySelectorAll('input[type="radio"], input[type="checkbox"]');
-
-                let isRequired = false
-                    , isChecked = false;
-
-                for (const choice of choices) {
-                    if (choice.required) {
-                        isRequired = true;
-                    }
-
-                    if (choice.checked) {
-                        isChecked = true;
-                    }
-                }
-
-                if (!isChecked && isRequired) {
-                    return {
-                        isValid: false,
-                        message: 'Please make a selection.'
-                    };
-                } else {
-                    return {
-                        isValid: true
-                    };
-                }
-            };
-
-            /*****************************************************************************
-             * Expects a Node (input[type="radio"] or input[type="checkbox"]).
-             */
-
-            const validateChoice = field => {
-                return validateGroup(field.closest('fieldset'));
-            };
-
-            /*****************************************************************************
-             * Expects a Node (input[type="tel"]).
-             */
-
-            const validatePhone = field => {
-                const val = field.value.trim();
-
-                if (val === '' && field.required) {
-                    return {
-                        isValid: false
-                    };
-                } else if (val !== '' && !isValidPhone(val)) {
-                    return {
-                        isValid: false,
-                        message: 'Please provide a valid phone number.'
-                    };
-                } else {
-                    return {
-                        isValid: true
-                    };
-                }
-            };
-
-            /*****************************************************************************
-             * Expects a Node (input[type="email"]).
-             */
-
-            const validateEmail = field => {
-                const val = field.value.trim();
-
-                if (val === '' && field.required) {
-                    return {
-                        isValid: false
-                    };
-                } else if (val !== '' && !isValidEmail(val)) {
-                    return {
-                        isValid: false,
-                        message: 'Please provide a valid email address.'
-                    };
-                } else {
-                    return {
-                        isValid: true
-                    };
-                }
-            };
-
-            /*****************************************************************************
-             * Expects a Node (field or fieldset).
-             *
-             * Returns an object describing the field's overall validity, as well as
-             * a possible error message where additional information may be helpful for
-             * the user to complete the field.
-             */
-
-            const getValidationData = field => {
-                switch (field.type) {
-                    case 'text':
-                    case 'textarea':
-                        return validateText(field);
-                    case 'select-one':
-                        return validateSelect(field);
-                    case 'fieldset':
-                        return validateGroup(field);
-                    case 'radio':
-                    case 'checkbox':
-                        return validateChoice(field);
-                    case 'tel':
-                        return validatePhone(field);
-                    case 'email':
-                        return validateEmail(field);
-                    default:
-                        throw new Error(`The provided field type '${field.tagName}:${field.type}' is not supported in this form.`);
-                }
-            };
-
-            /*****************************************************************************
-             * Expects a Node (field or fieldset).
-             *
-             * Returns the field's overall validity based on conditions set within
-             * `getValidationData()`.
-             */
-
-            const isValid = field => {
-                return getValidationData(field).isValid;
-            };
-
-            /*****************************************************************************
-             * Expects an integer.
-             *
-             * Returns a promise that either resolves if all fields in a given step are
-             * valid, or rejects and returns invalid fields for further processing.
-             */
-
-            const validateStep = currentStep => {
-                const fields = tabPanels[currentStep].querySelectorAll('fieldset, input:not([type="radio"]):not([type="checkbox"]), select, textarea');
-
-                const invalidFields = [...fields].filter(field => {
-                    return !isValid(field);
-                });
-
-                return new Promise((resolve, reject) => {
-                    if (invalidFields && !invalidFields.length) {
-                        resolve();
-                    } else {
-                        reject(invalidFields);
-                    }
-                });
-            };
-
-            // Form Error and Success
-
-            const FIELD_PARENT_CLASS = 'form-group'
-                , FIELD_ERROR_CLASS = 'form__error-text';
-
-            /*****************************************************************************
-             * Expects a Node (fieldset) that contains any number of radio or checkbox
-             * input elements, and a string representing the group's validation status.
-             */
-
-            function updateChoice(fieldset, status, errorId = '') {
-                const choices = fieldset.querySelectorAll('[type="radio"], [type="checkbox"]');
-
-                for (const choice of choices) {
-                    if (status) {
-                        choice.setAttribute('aria-invalid', 'true');
-                        choice.setAttribute('aria-describedby', errorId);
-                    } else {
-                        choice.removeAttribute('aria-invalid');
-                        choice.removeAttribute('aria-describedby');
-                    }
-                }
-            }
-
-            /*****************************************************************************
-             * Expects a Node (field or fieldset) that either has the class name defined
-             * by `FIELD_PARENT_CLASS`, or has a parent with that class name. Optional
-             * string defines the error message.
-             *
-             * Builds and appends an error message to the parent element, or updates an
-             * existing error message.
-             *
-             * https://www.davidmacd.com/blog/test-aria-describedby-errormessage-aria-live.html
-             */
-
-            function reportError(field, message = 'Please complete this required field.') {
-                const fieldParent = field.closest(`.${FIELD_PARENT_CLASS}`);
-
-                if (progressForm.contains(fieldParent)) {
-                    let fieldError = fieldParent.querySelector(`.${FIELD_ERROR_CLASS}`)
-                        , fieldErrorId = '';
-
-                    if (!fieldParent.contains(fieldError)) {
-                        fieldError = document.createElement('p');
-
-                        if (field.matches('fieldset')) {
-                            fieldErrorId = `${field.id}__error`;
-
-                            updateChoice(field, true, fieldErrorId);
-                        } else if (field.matches('[type="radio"], [type="checkbox"]')) {
-                            fieldErrorId = `${field.closest('fieldset').id}__error`;
-
-                            updateChoice(field.closest('fieldset'), true, fieldErrorId);
-                        } else {
-                            fieldErrorId = `${field.id}__error`;
-
-                            field.setAttribute('aria-invalid', 'true');
-                            field.setAttribute('aria-describedby', fieldErrorId);
-                        }
-
-                        fieldError.id = fieldErrorId;
-                        fieldError.classList.add(FIELD_ERROR_CLASS);
-
-                        fieldParent.appendChild(fieldError);
-                    }
-
-                    fieldError.textContent = message;
-                }
-            }
-
-            /*****************************************************************************
-             * Expects a Node (field or fieldset) that either has the class name defined
-             * by `FIELD_PARENT_CLASS`, or has a parent with that class name.
-             *
-             * https://www.davidmacd.com/blog/test-aria-describedby-errormessage-aria-live.html
-             */
-
-            function reportSuccess(field) {
-                const fieldParent = field.closest(`.${FIELD_PARENT_CLASS}`);
-
-                if (progressForm.contains(fieldParent)) {
-                    const fieldError = fieldParent.querySelector(`.${FIELD_ERROR_CLASS}`);
-
-                    if (fieldParent.contains(fieldError)) {
-                        if (field.matches('fieldset')) {
-                            updateChoice(field, false);
-                        } else if (field.matches('[type="radio"], [type="checkbox"]')) {
-                            updateChoice(field.closest('fieldset'), false);
-                        } else {
-                            field.removeAttribute('aria-invalid');
-                            field.removeAttribute('aria-describedby');
-                        }
-
-                        fieldParent.removeChild(fieldError);
-                    }
-                }
-            }
-
-            /*****************************************************************************
-             * Expects a Node (field or fieldset).
-             *
-             * Reports the field's overall validity to the user based on conditions set
-             * within `getValidationData()`.
-             */
-
-            function reportValidity(field) {
-                const validation = getValidationData(field);
-
-                if (!validation.isValid && validation.message) {
-                    reportError(field, validation.message);
-                } else if (!validation.isValid) {
-                    reportError(field);
-                } else {
-                    reportSuccess(field);
-                }
-            }
-
-            // Form Progression
-
-            /*****************************************************************************
-             * Resets the state of all tabs and tab panels.
-             */
-
-            function deactivateTabs() {
-                // Reset state of all tab items
-                tabItems.forEach(tab => {
-                    tab.setAttribute('aria-selected', 'false');
-                    tab.setAttribute('tabindex', '-1');
-                });
-
-                // Reset state of all panels
-                tabPanels.forEach(panel => {
-                    panel.setAttribute('hidden', '');
-                });
-            }
-
-            /*****************************************************************************
-             * Expects an integer.
-             *
-             * Shows the desired tab and its associated tab panel, then updates the form's
-             * current step to match the tab's index.
-             */
-
-            function activateTab(index) {
-                const thisTab = tabItems[index]
-                    , thisPanel = tabPanels[index];
-
-                // Close all other tabs
-                deactivateTabs();
-
-                // Focus the activated tab for accessibility
-                thisTab.focus();
-
-                // Set the interacted tab to active
-                thisTab.setAttribute('aria-selected', 'true');
-                thisTab.removeAttribute('tabindex');
-
-                // Display the associated tab panel
-                thisPanel.removeAttribute('hidden');
-
-                // Update the current step with the interacted tab's index value
-                currentStep = index;
-            }
-
-            /*****************************************************************************
-             * Expects an event from a click listener.
-             */
-
-            function clickTab(e) {
-                activateTab([...tabItems].indexOf(e.currentTarget));
-            }
-
-            /*****************************************************************************
-             * Expects an event from a keydown listener.
-             */
-
-            function arrowTab(e) {
-                const { keyCode, target } = e;
-
-                /**
-                 * If the current tab has an enabled next/previous sibling, activate it.
-                 * Otherwise, activate the tab at the beginning/end of the list.
-                 */
-
-                const targetPrev = target.previousElementSibling
-                    , targetNext = target.nextElementSibling
-                    , targetFirst = target.parentElement.firstElementChild
-                    , targetLast = target.parentElement.lastElementChild;
-
-                const isDisabled = node => node.hasAttribute('aria-disabled');
-
-                switch (keyCode) {
-                    case 37: // Left arrow
-                        if (progressForm.contains(targetPrev) && !isDisabled(targetPrev)) {
-                            activateTab(currentStep - 1);
-                        } else if (!isDisabled(targetLast)) {
-                            activateTab(tabItems.length - 1);
-                        } break;
-                    case 39: // Right arrow
-                        if (progressForm.contains(targetNext) && !isDisabled(targetNext)) {
-                            activateTab(currentStep + 1);
-                        } else if (!isDisabled(targetFirst)) {
-                            activateTab(0);
-                        } break;
-                }
-            }
-
-            /*****************************************************************************
-             * Expects a boolean.
-             *
-             * Updates the visual state of the progress bar and makes the next tab
-             * available for interaction (if there is a next tab).
-             */
-
-            // Immediately attach event listeners to the first tab (happens only once)
-            tabItems[0].addEventListener('click', clickTab);
-            tabItems[0].addEventListener('keydown', arrowTab);
-
-            function handleProgress(isComplete) {
-                const currentTab = tabItems[currentStep]
-                    , nextTab = tabItems[currentStep + 1];
-
-                if (isComplete) {
-                    currentTab.setAttribute('data-complete', 'true');
-
-                    /**
-                     * Verify that there is, indeed, a next tab before modifying or listening
-                     * to it. In case we've reached the last item in the tablist.
-                     */
-
-                    if (progressForm.contains(nextTab)) {
-                        nextTab.removeAttribute('aria-disabled');
-
-                        nextTab.addEventListener('click', clickTab);
-                        nextTab.addEventListener('keydown', arrowTab);
-                    }
-
-                } else {
-                    currentTab.setAttribute('data-complete', 'false');
-                }
-            }
-
-            // Form Interactions
-
-            /*****************************************************************************
-             * Returns a function that only executes after a delay.
-             *
-             * https://davidwalsh.name/javascript-debounce-function
-             */
-
-            const debounce = (fn, delay = 500) => {
-                let timeoutID;
-
-                return (...args) => {
-                    if (timeoutID) {
-                        clearTimeout(timeoutID);
-                    }
-
-                    timeoutID = setTimeout(() => {
-                        fn.apply(null, args);
-                        timeoutID = null;
-                    }, delay);
-                };
-            };
-
-            /*****************************************************************************
-             * Waits 0.5s before reacting to any input events. This reduces the frequency
-             * at which the listener is fired, making the errors less "noisy". Improves
-             * both performance and user experience.
-             */
-
-            progressForm.addEventListener('input', debounce(e => {
-                const { target } = e;
-
-                validateStep(currentStep).then(() => {
-
-                    // Update the progress bar (step complete)
-                    handleProgress(true);
-
-                }).catch(() => {
-
-                    // Update the progress bar (step incomplete)
-                    handleProgress(false);
-
-                });
-
-                // Display or remove any error messages
-                reportValidity(target);
-            }));
-
-            /****************************************************************************/
-
-            progressForm.addEventListener('click', e => {
-                const { target } = e;
-
-                if (target.matches('[data-action="next"]')) {
-                    validateStep(currentStep).then(() => {
-
-                        // Update the progress bar (step complete)
-                        handleProgress(true);
-
-                        // Progress to the next step
-                        activateTab(currentStep + 1);
-
-                    }).catch(invalidFields => {
-
-                        // Update the progress bar (step incomplete)
-                        handleProgress(false);
-
-                        // Show errors for any invalid fields
-                        invalidFields.forEach(field => {
-                            reportValidity(field);
-                        });
-
-                        // Focus the first found invalid field for the user
-                        invalidFields[0].focus();
-
-                    });
-                }
-
-                if (target.matches('[data-action="prev"]')) {
-
-                    // Revisit the previous step
-                    activateTab(currentStep - 1);
-
-                }
-            });
-
-            // Form Submission
-
-            /*****************************************************************************
-             * Returns the user's IP address.
-             */
-
-            async function getIP(url = 'https://api.ipify.org?format=json') {
-                const response = await fetch(url, {
-                    method: 'GET',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-
-                if (!response.ok) {
-                    throw new Error(response.statusText);
-                }
-
-                return response.json();
-            }
-
-            /*****************************************************************************
-             * POSTs to the specified endpoint.
-             */
-
-            async function postData(url = '', data = {}) {
-                const response = await fetch(url, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                });
-
-                if (!response.ok) {
-                    throw new Error(response.statusText);
-                }
-
-                return response.json();
-            }
-
-            /****************************************************************************/
-
-            function disableSubmit() {
-                const submitButton = progressForm.querySelector('[type="submit"]');
-
-                if (progressForm.contains(submitButton)) {
-
-                    // Update the state of the submit button
-                    submitButton.setAttribute('disabled', '');
-                    submitButton.textContent = 'Submitting...';
-
-                }
-            }
-
-            /****************************************************************************/
-
-            function handleSuccess(response) {
-                const thankYou = progressForm.querySelector('#progress-form__thank-you');
-
-                // Clear all HTML Nodes that are not the thank you panel
-                while (progressForm.firstElementChild !== thankYou) {
-                    progressForm.removeChild(progressForm.firstElementChild);
-                }
-
-                thankYou.removeAttribute('hidden');
-
-                // Logging the response from httpbin for quick verification
-                console.log(response);
-            }
-
-            /****************************************************************************/
-
-            function handleError(error) {
-                const submitButton = progressForm.querySelector('[type="submit"]');
-
-                if (progressForm.contains(submitButton)) {
-                    const errorText = document.createElement('p');
-
-                    // Reset the state of the submit button
-                    submitButton.removeAttribute('disabled');
-                    submitButton.textContent = 'Submit';
-
-                    // Display an error message for the user
-                    errorText.classList.add('m-0', 'form__error-text');
-                    errorText.textContent = `Sorry, your submission could not be processed.
-        Please try again. If the issue persists, please contact our support
-        team. Error message: ${error}`;
-
-                    submitButton.parentElement.prepend(errorText);
-                }
-            }
-
-            /****************************************************************************/
-
-            progressForm.addEventListener('submit', e => {
-
-                // Prevent the form from submitting
-                e.preventDefault();
-
-                // Get the API endpoint using the form action attribute
-                const form = e.currentTarget
-                    , API = new URL(form.action);
-
-                validateStep(currentStep).then(() => {
-
-                    // Indicate that the submission is working
-                    disableSubmit();
-
-                    // Prepare the data
-                    const formData = new FormData(form)
-                        , formTime = new Date().getTime()
-                        , formFields = [];
-
-                    // Format the data entries
-                    for (const [name, value] of formData) {
-                        formFields.push({
-                            'name': name,
-                            'value': value
-                        });
-                    }
-
-                    // Get the user's IP address (for fun)
-                    // Build the final data structure, including the IP
-                    // POST the data and handle success or error
-                    getIP().then(response => {
-                        return {
-                            'fields': formFields,
-                            'meta': {
-                                'submittedAt': formTime,
-                                'ipAddress': response.ip
-                            }
-                        };
-                    })
-                        .then(data => postData(API, data))
-                        .then(response => {
-                            setTimeout(() => {
-                                handleSuccess(response)
-                            }, 5000); // An artificial delay to show the state of the submit button
-                        })
-                        .catch(error => {
-                            setTimeout(() => {
-                                handleError(error)
-                            }, 5000); // An artificial delay to show the state of the submit button
-                        });
-
-                }).catch(invalidFields => {
-
-                    // Show errors for any invalid fields
-                    invalidFields.forEach(field => {
-                        reportValidity(field);
-                    });
-
-                    // Focus the first found invalid field for the user
-                    invalidFields[0].focus();
-
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
