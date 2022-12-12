@@ -1960,6 +1960,7 @@
       }
       a.userAddress.selected {
         position: relative;
+        display: block;
         &::before {
           position: absolute;
           right: 10px;

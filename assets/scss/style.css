@@ -2426,6 +2426,7 @@ p.curret-price {
 }
 .checkout-main .checkout-box .progress-form a.userAddress.selected {
   position: relative;
+  display: block;
 }
 .checkout-main .checkout-box .progress-form a.userAddress.selected::before {
   position: absolute;
