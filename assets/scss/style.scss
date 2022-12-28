@@ -428,6 +428,8 @@
       @include single-product-card;
       .product-image {
         @include single-product-image;
+        min-height: unset;
+        min-height: 361px;
         a.add-towish-btn {
           @include add-towish-btn;
           &:hover {

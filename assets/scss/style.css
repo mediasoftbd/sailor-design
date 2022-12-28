@@ -848,6 +848,8 @@ p.curret-price {
   min-height: 403px;
   position: relative;
   overflow: hidden;
+  min-height: unset;
+  min-height: 361px;
 }
 .flash-sale-main .single-product .card .product-image a.add-towish-btn {
   height: 40px;
