@@ -700,7 +700,7 @@ p.curret-price {
   border: none;
 }
 .new-arrval-main .single-product .card .product-image {
-  min-height: 403px;
+  min-height: 361px;
   position: relative;
   overflow: hidden;
 }
@@ -845,11 +845,9 @@ p.curret-price {
   border: none;
 }
 .flash-sale-main .single-product .card .product-image {
-  min-height: 403px;
+  min-height: 361px;
   position: relative;
   overflow: hidden;
-  min-height: unset;
-  min-height: 361px;
 }
 .flash-sale-main .single-product .card .product-image a.add-towish-btn {
   height: 40px;
