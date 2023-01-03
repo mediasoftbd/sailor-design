@@ -321,7 +321,7 @@
     height: 40px;
     background: #fff;
     top: 50%;
-    @include circle-radius;
+    // @include circle-radius;
     box-shadow: 0 0 1px 1px rgb(20 23 28 / 10%), 0 3px 1px 0 rgb(20 23 28 / 10%);
     @include transY-center;
     &::after {
@@ -330,10 +330,10 @@
     }
   }
   .swiper-button-prev {
-    left: 0;
+    left: 10px;
   }
   .swiper-button-next {
-    right: 0;
+    right: 10px;
   }
 }
 

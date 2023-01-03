@@ -653,11 +653,6 @@ p.curret-price {
   height: 40px;
   background: #fff;
   top: 50%;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
   top: 50%;
   transform: translateY(-50%);
@@ -672,10 +667,10 @@ p.curret-price {
   color: #2b2d42;
 }
 .trending-categories-main .swiper-button-prev {
-  left: 0;
+  left: 10px;
 }
 .trending-categories-main .swiper-button-next {
-  right: 0;
+  right: 10px;
 }
 
 .new-arrval-main {
