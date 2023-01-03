@@ -251,37 +251,67 @@
   margin-bottom: 20px;
   .trending-slider-wrapper {
     .single-category {
-      height: 120px;
-      width: 120px;
-      background: red;
-      @include circle-radius;
-      text-align: center;
-      overflow: hidden;
       margin: 0px auto;
+      position: relative;
       img {
-        height: 120px;
-        width: 120px;
-        max-width: 120px;
-        max-height: 120px;
-        @include circle-radius;
+        width: 100%;
       }
     }
     .category-description {
-      margin: 15px 0;
-      text-align: center;
       h3.parent-category {
         color: $product-title-color;
         text-transform: capitalize;
         font-size: 17px;
-        margin-bottom: 5px;
+
         font-weight: 700;
         line-height: normal;
-      }
-      p {
-        text-transform: capitalize;
-        font-size: 14px;
-        margin-bottom: 0;
-        color: $black;
+        width: 100%;
+
+        margin: 15px 0;
+        transform: translateY(-60px);
+        line-height: 50px;
+        height: 50px;
+        margin: 0 auto;
+        padding: 0 22px;
+        transition: all 0.3s ease;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #fff;
+        border-radius: 2px;
+        position: relative;
+
+        a {
+          color: #000;
+          width: 100%;
+
+          span {
+            font-weight: normal;
+            color: $product-title-color;
+          }
+        }
+        &:hover {
+          a {
+            color: red;
+          }
+        }
+        svg {
+          position: absolute;
+          right: 10px;
+          visibility: hidden;
+          top: 12px;
+        }
+        &:hover {
+          width: 80%;
+
+          a {
+            svg {
+              visibility: visible;
+            }
+          }
+        }
       }
     }
   }
@@ -290,9 +320,10 @@
     width: 40px;
     height: 40px;
     background: #fff;
-    top: 60px;
+    top: 50%;
     @include circle-radius;
     box-shadow: 0 0 1px 1px rgb(20 23 28 / 10%), 0 3px 1px 0 rgb(20 23 28 / 10%);
+    @include transY-center;
     &::after {
       font-size: 17px;
       color: $logo-blue;

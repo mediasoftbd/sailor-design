@@ -53,8 +53,8 @@ var swiper = new Swiper('.home-slider', {
 });
 
 var swiper = new Swiper('.trending-category', {
-  slidesPerView: 10,
-  spaceBetween: 10,
+  slidesPerView: 6,
+  spaceBetween: 20,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,

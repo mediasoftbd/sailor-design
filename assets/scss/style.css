@@ -593,59 +593,78 @@ p.curret-price {
   margin-bottom: 20px;
 }
 .trending-categories-main .trending-slider-wrapper .single-category {
-  height: 120px;
-  width: 120px;
-  background: red;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  text-align: center;
-  overflow: hidden;
   margin: 0px auto;
+  position: relative;
 }
 .trending-categories-main .trending-slider-wrapper .single-category img {
-  height: 120px;
-  width: 120px;
-  max-width: 120px;
-  max-height: 120px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-.trending-categories-main .trending-slider-wrapper .category-description {
-  margin: 15px 0;
-  text-align: center;
+  width: 100%;
 }
 .trending-categories-main .trending-slider-wrapper .category-description h3.parent-category {
   color: #909090;
   text-transform: capitalize;
   font-size: 17px;
-  margin-bottom: 5px;
   font-weight: 700;
   line-height: normal;
+  width: 100%;
+  margin: 15px 0;
+  transform: translateY(-60px);
+  line-height: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0 22px;
+  transition: all 0.3s ease;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  border-radius: 2px;
+  position: relative;
 }
-.trending-categories-main .trending-slider-wrapper .category-description p {
-  text-transform: capitalize;
-  font-size: 14px;
-  margin-bottom: 0;
-  color: #282828;
+.trending-categories-main .trending-slider-wrapper .category-description h3.parent-category a {
+  color: #000;
+  width: 100%;
+}
+.trending-categories-main .trending-slider-wrapper .category-description h3.parent-category a span {
+  font-weight: normal;
+  color: #909090;
+}
+.trending-categories-main .trending-slider-wrapper .category-description h3.parent-category:hover a {
+  color: red;
+}
+.trending-categories-main .trending-slider-wrapper .category-description h3.parent-category svg {
+  position: absolute;
+  right: 10px;
+  visibility: hidden;
+  top: 12px;
+}
+.trending-categories-main .trending-slider-wrapper .category-description h3.parent-category:hover {
+  width: 80%;
+}
+.trending-categories-main .trending-slider-wrapper .category-description h3.parent-category:hover a svg {
+  visibility: visible;
 }
 .trending-categories-main .swiper-button-prev,
 .trending-categories-main .swiper-button-next {
   width: 40px;
   height: 40px;
   background: #fff;
-  top: 60px;
+  top: 50%;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 .trending-categories-main .swiper-button-prev::after,
 .trending-categories-main .swiper-button-next::after {
