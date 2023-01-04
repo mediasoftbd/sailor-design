@@ -161,3 +161,20 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+
+@mixin continue-btn {
+  appearance: none;
+  background: none;
+  background-color: $logo-blue;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
