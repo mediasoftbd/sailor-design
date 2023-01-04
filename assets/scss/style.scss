@@ -1935,18 +1935,7 @@
         color: $logo-red;
       }
       .form-control {
-        padding-left: 20px;
-        padding-right: 20px;
-        appearance: none;
-        background: none;
-        background-color: #fff;
-        border: 1px solid #bcccdc;
-        height: 48px;
-        border-radius: 4px;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        -o-border-radius: 4px;
+        @include progress-formcontrol;
       }
 
       .form-group {
@@ -1962,28 +1951,10 @@
         border-color: $logo-red;
       }
       .continue-btn {
-        appearance: none;
-        background: none;
-        background-color: $logo-blue;
-        color: #fff;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 13px 20px;
-        text-transform: uppercase;
-        border: none;
-        border-radius: 4px;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        -ms-border-radius: 4px;
-        -o-border-radius: 4px;
+        @include continue-btn;
       }
       .address-books {
-        width: 100%;
-        min-height: 120px;
-        margin-bottom: 20px;
-        border: 2px dotted #e9ebec;
-        font-size: 16px;
-        padding: 15px;
+        @include address-books;
         address {
           margin-bottom: 0;
           color: $text-color;
@@ -2342,3 +2313,192 @@
   }
 }
 // thank you page end here
+
+// profile page start from here
+.userprofile-main {
+  // margin: 50px 0;
+  .form-check-label2 {
+    color: #102a43;
+    font-size: 17px;
+    display: block;
+    position: relative;
+    font-weight: 700;
+  }
+  .form-label {
+    color: #102a43;
+    font-size: 17px;
+    display: block;
+    position: relative;
+    font-weight: 700;
+  }
+  .form-label > [data-required='true']::after {
+    content: '*';
+    padding-left: 0.25em;
+    position: absolute;
+    color: $logo-red;
+  }
+  .form-control {
+    @include progress-formcontrol;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+  input[aria-invalid='true'] {
+    border-color: $logo-red;
+  }
+  select[aria-invalid='true'] {
+    border-color: $logo-red;
+  }
+  textarea[aria-invalid='true'] {
+    border-color: $logo-red;
+  }
+  .continue-btn {
+    @include continue-btn;
+    min-width: 250px;
+    margin-top: 20px;
+  }
+  .address-books {
+    @include address-books;
+    address {
+      margin-bottom: 0;
+      color: $text-color;
+      font-size: 12px;
+    }
+  }
+  a.userAddress.selected {
+    position: relative;
+    display: block;
+    &::before {
+      position: absolute;
+      right: 10px;
+      top: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background: url(../images/icon/check.svg);
+      background-size: cover;
+      content: '';
+      background-color: $logo-blue;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 12px;
+    }
+  }
+  .profile-sidebar {
+    background: #fff;
+    min-height: 100%;
+    padding: 20px;
+
+    h2 {
+      font-size: 17px;
+      text-align: left;
+      text-transform: capitalize;
+      font-weight: 700;
+      color: $logo-blue;
+    }
+
+    .profile-menubox {
+      .nav-item {
+        .nav-link {
+          padding: 5px 0px 5px 15px;
+          text-decoration: none;
+          font-weight: normal;
+          color: #6c757d;
+          font-size: 15px;
+          border-bottom: 1px solid #f7f7f7;
+          text-transform: capitalize;
+          transition: transform 0.3s ease-out;
+          -webkit-transition: transform 0.3s ease-out;
+          -moz-transition: transform 0.3s ease-out;
+          -ms-transition: transform 0.3s ease-out;
+          -o-transition: transform 0.3s ease-out;
+
+          i {
+            color: #6c757d;
+            width: 20px;
+            text-align: center;
+            margin-right: 7px;
+            transition: transform 0.3s ease-out;
+            -webkit-transition: transform 0.3s ease-out;
+            -moz-transition: transform 0.3s ease-out;
+            -ms-transition: transform 0.3s ease-out;
+            -o-transition: transform 0.3s ease-out;
+          }
+
+          &:hover {
+            color: $logo-red;
+
+            i {
+              color: $logo-red;
+            }
+          }
+        }
+
+        .nav-link.active {
+          color: $logo-red;
+
+          i {
+            color: $logo-red;
+          }
+        }
+      }
+    }
+  }
+  .personal-information {
+    margin-top: 30px;
+
+    .table {
+      tr {
+        td {
+          vertical-align: middle;
+          text-transform: capitalize;
+          font-size: 14px;
+
+          span {
+            @include order-status-span;
+          }
+
+          span.pending {
+            background: #f0932b;
+            @include order-status-span;
+          }
+
+          span.cancel {
+            background: #ff5252;
+            @include order-status-span;
+          }
+
+          span.deliverd {
+            @include order-status-span;
+            background: #2ecc71;
+          }
+
+          a {
+            padding: 5px 10px;
+            color: $logo-blue;
+          }
+
+          a:nth-child(2) {
+            i {
+              color: #ff5252;
+            }
+          }
+        }
+      }
+
+      tr:nth-child(1) {
+        td {
+          font-weight: bold;
+          font-size: 14px;
+
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+  }
+}

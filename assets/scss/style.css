@@ -349,6 +349,10 @@ p.curret-price {
   font-weight: 700;
 }
 
+.mt-ten {
+  margin-top: 20px;
+}
+
 .top-header {
   background: #282828;
   padding: 5px 0;
@@ -2769,4 +2773,233 @@ p.curret-price {
   border: none;
   font-size: 20px;
   font-weight: 700;
+}
+
+.userprofile-main .form-check-label2 {
+  color: #102a43;
+  font-size: 17px;
+  display: block;
+  position: relative;
+  font-weight: 700;
+}
+.userprofile-main .form-label {
+  color: #102a43;
+  font-size: 17px;
+  display: block;
+  position: relative;
+  font-weight: 700;
+}
+.userprofile-main .form-label > [data-required=true]::after {
+  content: "*";
+  padding-left: 0.25em;
+  position: absolute;
+  color: #d41f27;
+}
+.userprofile-main .form-control {
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  background-color: #fff;
+  border: 1px solid #bcccdc;
+  height: 48px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.userprofile-main .form-group {
+  margin-bottom: 15px;
+}
+.userprofile-main input[aria-invalid=true] {
+  border-color: #d41f27;
+}
+.userprofile-main select[aria-invalid=true] {
+  border-color: #d41f27;
+}
+.userprofile-main textarea[aria-invalid=true] {
+  border-color: #d41f27;
+}
+.userprofile-main .continue-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  background-color: #2b2d42;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 20px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  min-width: 250px;
+  margin-top: 20px;
+}
+.userprofile-main .address-books {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 20px;
+  border: 2px dotted #e9ebec;
+  font-size: 16px;
+  padding: 15px;
+}
+.userprofile-main .address-books address {
+  margin-bottom: 0;
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.userprofile-main a.userAddress.selected {
+  position: relative;
+  display: block;
+}
+.userprofile-main a.userAddress.selected::before {
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: url(../images/icon/check.svg);
+  background-size: cover;
+  content: "";
+  background-color: #2b2d42;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 12px;
+}
+.userprofile-main .profile-sidebar {
+  background: #fff;
+  min-height: 100%;
+  padding: 20px;
+}
+.userprofile-main .profile-sidebar h2 {
+  font-size: 17px;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #2b2d42;
+}
+.userprofile-main .profile-sidebar .profile-menubox .nav-item .nav-link {
+  padding: 5px 0px 5px 15px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #6c757d;
+  font-size: 15px;
+  border-bottom: 1px solid #f7f7f7;
+  text-transform: capitalize;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+}
+.userprofile-main .profile-sidebar .profile-menubox .nav-item .nav-link i {
+  color: #6c757d;
+  width: 20px;
+  text-align: center;
+  margin-right: 7px;
+  transition: transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  -moz-transition: transform 0.3s ease-out;
+  -ms-transition: transform 0.3s ease-out;
+  -o-transition: transform 0.3s ease-out;
+}
+.userprofile-main .profile-sidebar .profile-menubox .nav-item .nav-link:hover {
+  color: #d41f27;
+}
+.userprofile-main .profile-sidebar .profile-menubox .nav-item .nav-link:hover i {
+  color: #d41f27;
+}
+.userprofile-main .profile-sidebar .profile-menubox .nav-item .nav-link.active {
+  color: #d41f27;
+}
+.userprofile-main .profile-sidebar .profile-menubox .nav-item .nav-link.active i {
+  color: #d41f27;
+}
+.userprofile-main .personal-information {
+  margin-top: 30px;
+}
+.userprofile-main .personal-information .table tr td {
+  vertical-align: middle;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.userprofile-main .personal-information .table tr td span {
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 11px;
+  color: #fff;
+  letter-spacing: 0.8px;
+  min-width: 80px;
+  display: inline-block;
+}
+.userprofile-main .personal-information .table tr td span.pending {
+  background: #f0932b;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 11px;
+  color: #fff;
+  letter-spacing: 0.8px;
+  min-width: 80px;
+  display: inline-block;
+}
+.userprofile-main .personal-information .table tr td span.cancel {
+  background: #ff5252;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 11px;
+  color: #fff;
+  letter-spacing: 0.8px;
+  min-width: 80px;
+  display: inline-block;
+}
+.userprofile-main .personal-information .table tr td span.deliverd {
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 11px;
+  color: #fff;
+  letter-spacing: 0.8px;
+  min-width: 80px;
+  display: inline-block;
+  background: #2ecc71;
+}
+.userprofile-main .personal-information .table tr td a {
+  padding: 5px 10px;
+  color: #2b2d42;
+}
+.userprofile-main .personal-information .table tr td a:nth-child(2) i {
+  color: #ff5252;
+}
+.userprofile-main .personal-information .table tr:nth-child(1) td {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=style.css.map */

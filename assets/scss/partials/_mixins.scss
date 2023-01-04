@@ -178,3 +178,39 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+
+@mixin progress-formcontrol {
+  padding-left: 20px;
+  padding-right: 20px;
+  appearance: none;
+  background: none;
+  background-color: #fff;
+  border: 1px solid #bcccdc;
+  height: 48px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+@mixin address-books {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 20px;
+  border: 2px dotted #e9ebec;
+  font-size: 16px;
+  padding: 15px;
+}
+@mixin order-status-span {
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 11px;
+  color: #fff;
+  letter-spacing: 0.8px;
+  min-width: 80px;
+  display: inline-block;
+}
