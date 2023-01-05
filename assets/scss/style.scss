@@ -2501,4 +2501,54 @@
       }
     }
   }
+  .wishlist-grid-main {
+    display: grid;
+    grid-gap: 17px;
+    grid-template-columns: 1fr 1fr 1fr;
+    .single-product {
+      .image-box {
+        min-height: 328px;
+        position: relative;
+        overflow: hidden;
+        a.remove-towish-btn {
+          @include add-towish-btn;
+          &:hover {
+            color: $logo-red;
+            background: #fff;
+          }
+        }
+      }
+
+      .product-description {
+        margin-top: 10px;
+        h4.product-name {
+          margin-bottom: 5px;
+          a {
+            @include common-product-title;
+            transition: all 0.3s ease;
+            &:hover {
+              color: $logo-red;
+            }
+          }
+        }
+        p.price {
+          @include common-product-price;
+        }
+      }
+    }
+  }
+  .double-btns {
+    margin: 20px 0;
+    text-align: center;
+    .continue-btn {
+      min-width: 200px;
+      display: inline-block;
+    }
+    .continue-btn:first-child {
+      margin-right: 20px;
+    }
+    .continue-btn:first-child {
+      background: $logo-red;
+    }
+  }
 }

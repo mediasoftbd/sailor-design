@@ -3002,4 +3002,72 @@ p.curret-price {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: 0.3px;
+}
+.userprofile-main .wishlist-grid-main {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.userprofile-main .wishlist-grid-main .single-product .image-box {
+  min-height: 328px;
+  position: relative;
+  overflow: hidden;
+}
+.userprofile-main .wishlist-grid-main .single-product .image-box a.remove-towish-btn {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 15px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userprofile-main .wishlist-grid-main .single-product .image-box a.remove-towish-btn:hover {
+  color: #d41f27;
+  background: #fff;
+}
+.userprofile-main .wishlist-grid-main .single-product .product-description {
+  margin-top: 10px;
+}
+.userprofile-main .wishlist-grid-main .single-product .product-description h4.product-name {
+  margin-bottom: 5px;
+}
+.userprofile-main .wishlist-grid-main .single-product .product-description h4.product-name a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #909090;
+  transition: all 0.3s ease;
+}
+.userprofile-main .wishlist-grid-main .single-product .product-description h4.product-name a:hover {
+  color: #d41f27;
+}
+.userprofile-main .wishlist-grid-main .single-product .product-description p.price {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #2b2d42;
+}
+.userprofile-main .double-btns {
+  margin: 20px 0;
+  text-align: center;
+}
+.userprofile-main .double-btns .continue-btn {
+  min-width: 200px;
+  display: inline-block;
+}
+.userprofile-main .double-btns .continue-btn:first-child {
+  margin-right: 20px;
+}
+.userprofile-main .double-btns .continue-btn:first-child {
+  background: #d41f27;
 }/*# sourceMappingURL=style.css.map */
