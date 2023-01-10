@@ -148,6 +148,11 @@ body.offcanvas-active {
 }
 .navbar .megamenu {
   padding: 1rem;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 
 @media all and (min-width: 992px) {
@@ -499,6 +504,44 @@ p.curret-price {
 }
 .final-nav li.nav-item:not(:last-child) {
   margin-right: 10px;
+}
+.final-nav .menugrid-main {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: 280px 1fr 1fr 1fr 1fr 240px 240px;
+}
+.final-nav .menugrid-main .gridbox-single {
+  min-height: 100px;
+}
+.final-nav .menugrid-main .gridbox-single .left-image-box:not(:last-child) {
+  margin-bottom: 10px;
+}
+.final-nav .menugrid-main .gridbox-single .col-megamenu:not(:last-child) {
+  margin-bottom: 10px;
+}
+.final-nav .menugrid-main .gridbox-single .col-megamenu h6.title {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.final-nav .menugrid-main .gridbox-single .col-megamenu h6.title a {
+  color: #2b2d42;
+  transition: all 0.3s ease;
+}
+.final-nav .menugrid-main .gridbox-single .col-megamenu h6.title a:hover {
+  color: #d41f27;
+  padding-left: 10px;
+}
+.final-nav .menugrid-main .gridbox-single .col-megamenu ul li a {
+  color: #2b2d42;
+  font-size: 14px;
+  text-transform: unset;
+  transition: all 0.3s ease;
+}
+.final-nav .menugrid-main .gridbox-single .col-megamenu ul li a:hover {
+  color: #d41f27;
+  padding-left: 10px;
 }
 
 .main-slider .swiper {

@@ -150,6 +150,7 @@ body.offcanvas-active {
 
 .navbar .megamenu {
   padding: 1rem;
+  @include no-radious;
 }
 
 @media all and (min-width: 992px) {
