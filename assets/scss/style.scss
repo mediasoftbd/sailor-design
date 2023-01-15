@@ -2865,7 +2865,7 @@
 }
 
 .common-banner-main {
-  background: url(../images/common-banner.png);
+  background: url(../images/bottom-banner.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2890,6 +2890,105 @@
       }
       .breadcrumb-item + .breadcrumb-item::before {
         color: #fff;
+      }
+    }
+  }
+}
+
+.log-register-main {
+  padding: 40px 0px;
+  position: relative;
+  border-top: 1px solid #f3f3f3;
+  &::before {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background: #f3f3f3;
+    top: 71px;
+    content: '';
+    z-index: -1;
+  }
+  .login-reg-tabs {
+    width: 400px;
+    min-height: 400px;
+    margin: 0px auto;
+    .nav-tabs {
+      border-bottom: none;
+      .nav-item {
+        width: 45.4545454545%;
+        text-align: center;
+        margin-left: 2.2727272727%;
+        margin-right: 2.2727272727%;
+        .nav-link {
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          -ms-border-radius: 0;
+          -o-border-radius: 0;
+          margin: auto;
+          margin-right: auto;
+          margin-left: auto;
+          padding-top: 4px;
+          padding-bottom: 6px;
+          font-size: 14px;
+          width: 100%;
+          border: none;
+          border-bottom-color: currentcolor;
+          border-bottom-style: none;
+          border-bottom-width: medium;
+          text-transform: capitalize;
+
+          letter-spacing: 0.4px;
+          font-weight: 500;
+          margin-left: 2px;
+          margin-right: 2px;
+          color: #000;
+        }
+        .nav-link.active {
+          border-bottom: 2px solid $logo-red;
+          color: $logo-red;
+        }
+      }
+    }
+    .tab-content {
+      padding: 34px 0px;
+      .form-control {
+        @include progress-formcontrol;
+        margin-bottom: 20px;
+      }
+      .login-btn {
+        @include continue-btn;
+        width: 100%;
+        margin: 20px 0;
+      }
+      a.forget-pass {
+        border-bottom: 1px solid #adafb2;
+        color: #adafb2;
+        cursor: pointer;
+        font-family: 'Lato', 'Roboto', sans-serif;
+        font-size: 12px;
+        padding-bottom: 1px;
+        transition: 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        letter-spacing: 0.3px;
+      }
+      .iti {
+        width: 100%;
+        margin-bottom: 20px;
+        .form-control {
+          padding-left: 100px !important;
+        }
+      }
+      .terms {
+        p {
+          font-size: 10px;
+          color: #6d6f71;
+          letter-spacing: 0.3px;
+          line-height: 18px;
+
+          margin: 0;
+        }
       }
     }
   }
