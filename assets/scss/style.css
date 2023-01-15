@@ -3567,4 +3567,38 @@ p.curret-price {
   letter-spacing: 0.3px;
   line-height: 18px;
   margin: 0;
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav {
+  margin-top: 20px;
+  justify-content: center;
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav li.nav-item {
+  margin-right: 20px;
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav li.nav-item a.nav-link {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: red;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav li.nav-item .nav-link.facebook {
+  background: #4267b2;
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav li.nav-item .nav-link.instagram {
+  background: linear-gradient(to right, #6541c1 0%, #d43396 98%, #d43396 100%);
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav li.nav-item .nav-link.linkedin {
+  background: #0072b1;
+}
+.log-register-main .login-reg-tabs .tab-content ul.social-login-nav li.nav-item .nav-link.google {
+  background: #DB4437;
 }/*# sourceMappingURL=style.css.map */
