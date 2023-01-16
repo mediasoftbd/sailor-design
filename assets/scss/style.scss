@@ -133,6 +133,146 @@
           font-size: 20px;
         }
       }
+      .shopping-bag-main {
+        padding: 17px;
+        min-height: 400px;
+        width: 400px;
+        background-color: white;
+        border: 1px solid #eee;
+        position: absolute;
+        right: 0;
+        top: 42px;
+        z-index: 9;
+        display: none;
+        -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
+          both;
+        animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+        &::before {
+          position: absolute;
+          top: -17px;
+          right: 14px;
+          pointer-events: none;
+          content: ' ';
+          border: 8px solid #eee;
+          border-top: 8px solid transparent;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+        }
+        .shopping-title {
+          text-align: left;
+          text-transform: capitalize;
+          h3 {
+            color: $logo-blue;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            line-height: 22px;
+            margin-bottom: 10px;
+            font-weight: 600;
+          }
+        }
+        .shopping-scrol {
+          max-height: 290px;
+          .card {
+            @include no-radious;
+            border-color: #eee;
+            img {
+              width: 100%;
+            }
+            .card-body {
+              padding: 5px 10px;
+              .products-namebox {
+                display: flex;
+                flex-wrap: wrap;
+                h3 {
+                  color: $logo-blue;
+                  text-transform: uppercase;
+                  font-size: 13px;
+                  font-weight: 600 !important;
+                  font-weight: normal;
+                  letter-spacing: 0.3px;
+                  line-height: 20px;
+                  text-decoration: none;
+                  text-transform: capitalize;
+                  flex-basis: 100%;
+                  margin-bottom: 5px;
+                }
+                h3.price {
+                  color: $logo-red;
+                }
+              }
+              .price-description {
+                text-align: left;
+                h3 {
+                  color: $logo-blue;
+                  font-size: 13px;
+                  font-style: normal;
+
+                  letter-spacing: 0.3px;
+                  line-height: 20px;
+                  text-transform: capitalize;
+                  margin-bottom: 0;
+                }
+              }
+              .remove-product {
+                position: relative;
+                a.remove-item {
+                  color: $logo-red;
+                  font-size: 12px;
+                  position: absolute;
+                  right: 10px;
+                  top: -4px;
+                }
+              }
+            }
+          }
+        }
+        .amount-box {
+          display: flex;
+          flex-wrap: wrap;
+          h3 {
+            flex-basis: 50%;
+            color: $logo-blue;
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            line-height: 22px;
+            text-transform: capitalize;
+            font-weight: 600;
+          }
+        }
+        .button-sets {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          .view-shopping {
+            @include continue-btn;
+            flex-basis: 55%;
+            font-size: 14px;
+            text-transform: capitalize;
+            padding: 8px 15px;
+          }
+
+          .checkout {
+            @include continue-btn;
+            background: $logo-red;
+            flex-basis: 43%;
+            font-size: 14px;
+            text-transform: capitalize;
+            padding: 8px 15px;
+          }
+        }
+      }
+      &:hover {
+        .shopping-bag-main {
+          display: block;
+        }
+      }
     }
   }
 }
